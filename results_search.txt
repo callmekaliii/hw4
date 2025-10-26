@@ -1,1165 +1,985 @@
 === Running search experiments ===
-Started: Sun Oct 26 07:48:10 UTC 2025
+Started: Sun Oct 26 19:55:23 UTC 2025
 
 Generating files for search...
-Checking disk space...
-Available disk space: 196.069 GB
-Needed disk space: 2.25 GB
-Disk space check passed: 196.069 GB available, 2.25 GB needed
+=== VaultX Configuration ===
+Threads: 24, I/O Threads: 1
+Exponent: 26, Total Hashes: 67108864
+Memory: 1024MB, Records per round: 67108864, Rounds: 1
+Final file size: 1 GB
+Output: k26-search.x
+=================================
+Available disk space: 196.04 GB
+Needed disk space: 1.00 GB
+Disk space check passed.
 Starting hash generation with 24 compute threads and 1 I/O threads...
-I/O Worker 0: Opening temp file...
-I/O Worker 0: Started successfully
-Round 0: Sorting 53687091 records...
-[10s] Progress: 80.0% | Hash Rate: 5.37 MH/s | I/O: 0.00 MB/s
-Round 0: Queueing for I/O...
-Round 0: Completed and queued
-I/O Worker 0: First write of 53687091 records (1024.00 MB)
-Round 1: Sorting 13421773 records...
-Round 1: Queueing for I/O...
-Round 1: Completed and queued
+[Round 1/1] Generating 67108864 hashes...
+[2s] Progress: 36.1% | Round: 1/1 | Hash Rate: 12.1038 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[4s] Progress: 89.6% | Round: 1/1 | Hash Rate: 15.0371 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[Round 1] Hash generation: 4.3898s (15.2876 MH/s)
+[Round 1] Sorting 67108864 records...
+[6s] Progress: 100.0% | Round: 1/1 | Hash Rate: 11.1835 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[8s] Progress: 100.0% | Round: 1/1 | Hash Rate: 8.3876 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[10s] Progress: 100.0% | Round: 1/1 | Hash Rate: 6.7101 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[12s] Progress: 100.0% | Round: 1/1 | Hash Rate: 5.5918 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[14s] Progress: 100.0% | Round: 1/1 | Hash Rate: 4.7930 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[16s] Progress: 100.0% | Round: 1/1 | Hash Rate: 4.1939 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[18s] Progress: 100.0% | Round: 1/1 | Hash Rate: 3.7279 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[Round 1] Sorting completed: 15.2133s
+[Round 1] Queueing for I/O...
 All rounds completed. Shutting down queue...
 Waiting for I/O threads to finish...
-I/O Worker 0: Final sync...
-[20s] Progress: 100.0% | Hash Rate: 3.36 MH/s | I/O: 64.00 MB/s
-I/O Worker 0: Exiting
-Starting merge phase...
-Starting merge of 2 runs...
-Loading initial records from 2 runs...
-Starting merge process...
-Merge progress: 1.0% (671088/67108864) at 927 K records/sec
-Merge progress: 2.0% (1342176/67108864) at 923 K records/sec
-Merge progress: 3.0% (2013264/67108864) at 923 K records/sec
-Merge progress: 4.0% (2684352/67108864) at 922 K records/sec
-Merge progress: 5.0% (3355440/67108864) at 920 K records/sec
-Merge progress: 6.0% (4026528/67108864) at 920 K records/sec
-Merge progress: 7.0% (4697616/67108864) at 919 K records/sec
-Merge progress: 8.0% (5368704/67108864) at 919 K records/sec
-Merge progress: 9.0% (6039792/67108864) at 920 K records/sec
-Merge progress: 10.0% (6710880/67108864) at 920 K records/sec
-Merge progress: 11.0% (7381968/67108864) at 920 K records/sec
-Merge progress: 12.0% (8053056/67108864) at 919 K records/sec
-Merge progress: 13.0% (8724144/67108864) at 919 K records/sec
-[30s] Progress: 100.0% | Hash Rate: 2.24 MH/s | I/O: 42.67 MB/s | Merge: 13.1%
-Merge progress: 14.0% (9395232/67108864) at 919 K records/sec
-Merge progress: 15.0% (10066320/67108864) at 919 K records/sec
-Merge progress: 16.0% (10737408/67108864) at 919 K records/sec
-Merge progress: 17.0% (11408496/67108864) at 919 K records/sec
-Merge progress: 18.0% (12079584/67108864) at 919 K records/sec
-Merge progress: 19.0% (12750672/67108864) at 919 K records/sec
-Merge progress: 20.0% (13421760/67108864) at 919 K records/sec
-Merge progress: 21.0% (14092848/67108864) at 919 K records/sec
-Merge progress: 22.0% (14763936/67108864) at 919 K records/sec
-Merge progress: 23.0% (15435024/67108864) at 919 K records/sec
-Merge progress: 24.0% (16106112/67108864) at 919 K records/sec
-Merge progress: 25.0% (16777200/67108864) at 919 K records/sec
-Merge progress: 26.0% (17448288/67108864) at 919 K records/sec
-[40s] Progress: 100.0% | Hash Rate: 1.68 MH/s | I/O: 32.00 MB/s | Merge: 26.8%
-Merge progress: 27.0% (18119376/67108864) at 919 K records/sec
-Merge progress: 28.0% (18790464/67108864) at 919 K records/sec
-Merge progress: 29.0% (19461552/67108864) at 919 K records/sec
-Merge progress: 30.0% (20132640/67108864) at 919 K records/sec
-Merge progress: 31.0% (20803728/67108864) at 919 K records/sec
-Merge progress: 32.0% (21474816/67108864) at 919 K records/sec
-Merge progress: 33.0% (22145904/67108864) at 919 K records/sec
-Merge progress: 34.0% (22816992/67108864) at 919 K records/sec
-Merge progress: 35.0% (23488080/67108864) at 919 K records/sec
-Merge progress: 36.0% (24159168/67108864) at 919 K records/sec
-Merge progress: 37.0% (24830256/67108864) at 919 K records/sec
-Merge progress: 38.0% (25501344/67108864) at 919 K records/sec
-Merge progress: 39.0% (26172432/67108864) at 919 K records/sec
-Merge progress: 40.0% (26843520/67108864) at 919 K records/sec
-[50s] Progress: 100.0% | Hash Rate: 1.34 MH/s | I/O: 25.60 MB/s | Merge: 40.5%
-Merge progress: 41.0% (27514608/67108864) at 919 K records/sec
-Merge progress: 42.0% (28185696/67108864) at 919 K records/sec
-Merge progress: 43.0% (28856784/67108864) at 919 K records/sec
-Merge progress: 44.0% (29527872/67108864) at 918 K records/sec
-Merge progress: 45.0% (30198960/67108864) at 917 K records/sec
-Merge progress: 46.0% (30870048/67108864) at 917 K records/sec
-Merge progress: 47.0% (31541136/67108864) at 917 K records/sec
-Merge progress: 48.0% (32212224/67108864) at 917 K records/sec
-Merge progress: 49.0% (32883312/67108864) at 917 K records/sec
-Merge progress: 50.0% (33554400/67108864) at 917 K records/sec
-Merge progress: 51.0% (34225488/67108864) at 917 K records/sec
-Merge progress: 52.0% (34896576/67108864) at 917 K records/sec
-Merge progress: 53.0% (35567664/67108864) at 917 K records/sec
-Merge progress: 54.0% (36238752/67108864) at 918 K records/sec
-[60s] Progress: 100.0% | Hash Rate: 1.12 MH/s | I/O: 21.33 MB/s | Merge: 54.1%
-Merge progress: 55.0% (36909840/67108864) at 918 K records/sec
-Merge progress: 56.0% (37580928/67108864) at 918 K records/sec
-Merge progress: 57.0% (38252016/67108864) at 918 K records/sec
-Merge progress: 58.0% (38923104/67108864) at 918 K records/sec
-Merge progress: 59.0% (39594192/67108864) at 918 K records/sec
-Merge progress: 60.0% (40265280/67108864) at 918 K records/sec
-Merge progress: 61.0% (40936368/67108864) at 918 K records/sec
-Merge progress: 62.0% (41607456/67108864) at 918 K records/sec
-Merge progress: 63.0% (42278544/67108864) at 918 K records/sec
-Merge progress: 64.0% (42949632/67108864) at 918 K records/sec
-Merge progress: 65.0% (43620720/67108864) at 918 K records/sec
-Merge progress: 66.0% (44291808/67108864) at 918 K records/sec
-Merge progress: 67.0% (44962896/67108864) at 918 K records/sec
-[70s] Progress: 100.0% | Hash Rate: 0.96 MH/s | I/O: 18.29 MB/s | Merge: 67.8%
-Merge progress: 68.0% (45633984/67108864) at 918 K records/sec
-Merge progress: 69.0% (46305072/67108864) at 918 K records/sec
-Merge progress: 70.0% (46976160/67108864) at 918 K records/sec
-Merge progress: 71.0% (47647248/67108864) at 918 K records/sec
-Merge progress: 72.0% (48318336/67108864) at 918 K records/sec
-Merge progress: 73.0% (48989424/67108864) at 918 K records/sec
-Merge progress: 74.0% (49660512/67108864) at 918 K records/sec
-Merge progress: 75.0% (50331600/67108864) at 918 K records/sec
-Merge progress: 76.0% (51002688/67108864) at 918 K records/sec
-Merge progress: 77.0% (51673776/67108864) at 918 K records/sec
-Merge progress: 78.0% (52344864/67108864) at 918 K records/sec
-Merge progress: 79.0% (53015952/67108864) at 918 K records/sec
-Merge progress: 80.0% (53687040/67108864) at 918 K records/sec
-Merge progress: 81.0% (54358128/67108864) at 918 K records/sec
-[80s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 16.00 MB/s | Merge: 81.5%
-Merge progress: 82.0% (55029216/67108864) at 918 K records/sec
-Merge progress: 83.0% (55700304/67108864) at 918 K records/sec
-Merge progress: 84.0% (56371392/67108864) at 918 K records/sec
-Merge progress: 85.0% (57042480/67108864) at 918 K records/sec
-Merge progress: 86.0% (57713568/67108864) at 918 K records/sec
-Merge progress: 87.0% (58384656/67108864) at 917 K records/sec
-Merge progress: 88.0% (59055744/67108864) at 917 K records/sec
-Merge progress: 89.0% (59726832/67108864) at 917 K records/sec
-Merge progress: 90.0% (60397920/67108864) at 917 K records/sec
-Merge progress: 91.0% (61069008/67108864) at 917 K records/sec
-Merge progress: 92.0% (61740096/67108864) at 917 K records/sec
-Merge progress: 93.0% (62411184/67108864) at 917 K records/sec
-Merge progress: 94.0% (63082272/67108864) at 917 K records/sec
-Merge progress: 95.0% (63753360/67108864) at 917 K records/sec
-[90s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.22 MB/s | Merge: 95.1%
-Merge progress: 96.0% (64424448/67108864) at 917 K records/sec
-Merge progress: 97.0% (65095536/67108864) at 917 K records/sec
-Merge progress: 98.0% (65766624/67108864) at 917 K records/sec
-Merge progress: 99.0% (66437712/67108864) at 917 K records/sec
-Merge progress: 100.0% (67108800/67108864) at 917 K records/sec
-Merge completed successfully: 67108864 records written
-Temp file cleaned up
+[20s] Progress: 100.0% | Round: 1/1 | Hash Rate: 3.3551 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[22s] Progress: 100.0% | Round: 1/1 | Hash Rate: 3.0501 MH/s | I/O Rate: 46.5405 MB/s | I/O Blocks: 1
 Final statistics:
-vaultx t24 i1 m1024 k26 0.67 0.00 100.00
+=== Final Statistics ===
+Total time: 24.0027 seconds
+Hash rate: 2.7959 MH/s
+I/O rate: 42.6618 MB/s
+File size: 1.000000 GB
+vaultx t24 i1 m1024 k26 2.7959 42.6618 24.002727
 === VaultX Configuration ===
 Threads: 24, I/O Threads: 1
 Exponent: 32, Total Hashes: 4294967296
-Memory: 2048MB, Records per round: 107374182, Rounds: 41
-Temp file size needed: 80 GB
+Memory: 2048MB, Records per round: 134217728, Rounds: 32
 Final file size: 64 GB
-Output: k32-t24-i1-m2048.x, Temp: temp.t
+Output: k32-search.x
 =================================
-Checking disk space...
-Available disk space: 195.069 GB
-Needed disk space: 144 GB
-Disk space check passed: 195.069 GB available, 144 GB needed
+Available disk space: 195.04 GB
+Needed disk space: 64.00 GB
+Disk space check passed.
 Starting hash generation with 24 compute threads and 1 I/O threads...
-I/O Worker 0: Opening temp file...
-Round 0/40: Generating 107374182 hashes (nonce 0 to 107374181)
-I/O Worker 0: Started successfully
-Round 0: Hash generation completed in 6.15s (17.47 MH/s)
-Round 0: Sorting 107374182 records...
-[10s] Progress: 2.5% | Hash Rate: 10.74 MH/s | I/O: 0.00 MB/s
-[20s] Progress: 2.5% | Hash Rate: 5.37 MH/s | I/O: 0.00 MB/s
-[30s] Progress: 2.5% | Hash Rate: 3.58 MH/s | I/O: 0.00 MB/s
-Round 0: Sorting completed in 26.19s
-Round 0: Queueing for I/O...
-Round 0: Completed and queued
-Round 1/40: Generating 107374182 hashes (nonce 107374182 to 214748363)
-I/O Worker 0: First write of 107374182 records (2048.00 MB)
-I/O Worker 0: Written 0.00 GB
-[40s] Progress: 4.6% | Hash Rate: 4.92 MH/s | I/O: 51.20 MB/s
-Round 1: Hash generation completed in 6.03s (17.82 MH/s)
-Round 1: Sorting 107374182 records...
-[50s] Progress: 5.0% | Hash Rate: 4.29 MH/s | I/O: 40.96 MB/s
-[60s] Progress: 5.0% | Hash Rate: 3.58 MH/s | I/O: 34.13 MB/s
-Round 1: Sorting completed in 23.78s
-Round 1: Queueing for I/O...
-Round 1: Completed and queued
-Round 2/40: Generating 107374182 hashes (nonce 214748364 to 322122545)
-[70s] Progress: 6.6% | Hash Rate: 4.07 MH/s | I/O: 58.51 MB/s
-Round 2: Hash generation completed in 6.03s (17.81 MH/s)
-Round 2: Sorting 107374182 records...
-[80s] Progress: 7.5% | Hash Rate: 4.03 MH/s | I/O: 51.20 MB/s
-[90s] Progress: 7.5% | Hash Rate: 3.58 MH/s | I/O: 45.51 MB/s
-Round 2: Sorting completed in 23.46s
-Round 2: Queueing for I/O...
-Round 2: Completed and queued
-Round 3/40: Generating 107374182 hashes (nonce 322122546 to 429496727)
-[100s] Progress: 8.8% | Hash Rate: 3.79 MH/s | I/O: 61.44 MB/s
-Round 3: Hash generation completed in 6.03s (17.81 MH/s)
-Round 3: Sorting 107374182 records...
-[110s] Progress: 10.0% | Hash Rate: 3.90 MH/s | I/O: 55.85 MB/s
-[120s] Progress: 10.0% | Hash Rate: 3.58 MH/s | I/O: 51.20 MB/s
-Round 3: Sorting completed in 23.16s
-Round 3: Queueing for I/O...
-Round 3: Completed and queued
-Round 4/40: Generating 107374182 hashes (nonce 429496728 to 536870909)
-[130s] Progress: 11.1% | Hash Rate: 3.68 MH/s | I/O: 63.01 MB/s
-Round 4: Hash generation completed in 6.04s (17.79 MH/s)
-Round 4: Sorting 107374182 records...
-[140s] Progress: 12.5% | Hash Rate: 3.83 MH/s | I/O: 58.51 MB/s
-[150s] Progress: 12.5% | Hash Rate: 3.58 MH/s | I/O: 54.61 MB/s
-Round 4: Sorting completed in 23.26s
-Round 4: Queueing for I/O...
-Round 4: Completed and queued
-Round 5/40: Generating 107374182 hashes (nonce 536870910 to 644245091)
-[160s] Progress: 13.4% | Hash Rate: 3.59 MH/s | I/O: 64.00 MB/s
-Round 5: Hash generation completed in 5.92s (18.12 MH/s)
-Round 5: Sorting 107374182 records...
-[170s] Progress: 15.0% | Hash Rate: 3.79 MH/s | I/O: 60.23 MB/s
-[180s] Progress: 15.0% | Hash Rate: 3.58 MH/s | I/O: 56.89 MB/s
-Round 5: Sorting completed in 23.36s
-Round 5: Queueing for I/O...
-Round 5: Completed and queued
-Round 6/40: Generating 107374182 hashes (nonce 644245092 to 751619273)
-[190s] Progress: 15.6% | Hash Rate: 3.53 MH/s | I/O: 64.67 MB/s
-Round 6: Hash generation completed in 6.04s (17.79 MH/s)
-Round 6: Sorting 107374182 records...
-[200s] Progress: 17.5% | Hash Rate: 3.76 MH/s | I/O: 61.44 MB/s
-[210s] Progress: 17.5% | Hash Rate: 3.58 MH/s | I/O: 58.51 MB/s
-Round 6: Sorting completed in 23.35s
-Round 6: Queueing for I/O...
-Round 6: Completed and queued
-Round 7/40: Generating 107374182 hashes (nonce 751619274 to 858993455)
-[220s] Progress: 17.9% | Hash Rate: 3.49 MH/s | I/O: 65.16 MB/s
-Round 7: Hash generation completed in 6.02s (17.85 MH/s)
-Round 7: Sorting 107374182 records...
-[230s] Progress: 20.0% | Hash Rate: 3.73 MH/s | I/O: 62.33 MB/s
-[240s] Progress: 20.0% | Hash Rate: 3.58 MH/s | I/O: 59.73 MB/s
-Round 7: Sorting completed in 23.06s
-Round 7: Queueing for I/O...
-Round 7: Completed and queued
-Round 8/40: Generating 107374182 hashes (nonce 858993456 to 966367637)
-[250s] Progress: 20.2% | Hash Rate: 3.47 MH/s | I/O: 65.53 MB/s
-Round 8: Hash generation completed in 6.03s (17.80 MH/s)
-Round 8: Sorting 107374182 records...
-[260s] Progress: 22.5% | Hash Rate: 3.72 MH/s | I/O: 63.01 MB/s
-[270s] Progress: 22.5% | Hash Rate: 3.58 MH/s | I/O: 60.68 MB/s
-Round 8: Sorting completed in 23.17s
-Round 8: Queueing for I/O...
-Round 8: Completed and queued
-Round 9/40: Generating 107374182 hashes (nonce 966367638 to 1073741819)
-[280s] Progress: 22.5% | Hash Rate: 3.45 MH/s | I/O: 58.51 MB/s
-Round 9: Hash generation completed in 6.05s (17.75 MH/s)
-Round 9: Sorting 107374182 records...
-[290s] Progress: 25.0% | Hash Rate: 3.70 MH/s | I/O: 63.56 MB/s
-[300s] Progress: 25.0% | Hash Rate: 3.58 MH/s | I/O: 61.44 MB/s
-Round 9: Sorting completed in 23.17s
-Round 9: Queueing for I/O...
-Round 9: Completed and queued
-Round 10/40: Generating 107374182 hashes (nonce 1073741820 to 1181116001)
-[310s] Progress: 25.0% | Hash Rate: 3.46 MH/s | I/O: 59.46 MB/s
-Round 10: Hash generation completed in 5.94s (18.09 MH/s)
-Round 10: Sorting 107374182 records...
-[320s] Progress: 27.5% | Hash Rate: 3.69 MH/s | I/O: 64.00 MB/s
-[330s] Progress: 27.5% | Hash Rate: 3.58 MH/s | I/O: 62.06 MB/s
-Round 10: Sorting completed in 23.24s
-Round 10: Queueing for I/O...
-Round 10: Completed and queued
-Round 11/40: Generating 107374182 hashes (nonce 1181116002 to 1288490183)
-[340s] Progress: 27.5% | Hash Rate: 3.47 MH/s | I/O: 60.23 MB/s
-Round 11: Hash generation completed in 5.90s (18.20 MH/s)
-Round 11: Sorting 107374182 records...
-[350s] Progress: 30.0% | Hash Rate: 3.68 MH/s | I/O: 64.36 MB/s
-[360s] Progress: 30.0% | Hash Rate: 3.58 MH/s | I/O: 62.58 MB/s
-Round 11: Sorting completed in 23.03s
-Round 11: Queueing for I/O...
-Round 11: Completed and queued
-Round 12/40: Generating 107374182 hashes (nonce 1288490184 to 1395864365)
-[370s] Progress: 30.0% | Hash Rate: 3.48 MH/s | I/O: 60.89 MB/s
-Round 12: Hash generation completed in 5.88s (18.27 MH/s)
-Round 12: Sorting 107374182 records...
-[380s] Progress: 32.5% | Hash Rate: 3.67 MH/s | I/O: 64.67 MB/s
-[390s] Progress: 32.5% | Hash Rate: 3.58 MH/s | I/O: 63.01 MB/s
-[400s] Progress: 32.5% | Hash Rate: 3.49 MH/s | I/O: 61.44 MB/s
-Round 12: Sorting completed in 23.41s
-Round 12: Queueing for I/O...
-Round 12: Completed and queued
-Round 13/40: Generating 107374182 hashes (nonce 1395864366 to 1503238547)
-Round 13: Hash generation completed in 5.90s (18.21 MH/s)
-Round 13: Sorting 107374182 records...
-[410s] Progress: 35.0% | Hash Rate: 3.67 MH/s | I/O: 64.94 MB/s
-[420s] Progress: 35.0% | Hash Rate: 3.58 MH/s | I/O: 63.39 MB/s
-[430s] Progress: 35.0% | Hash Rate: 3.50 MH/s | I/O: 61.91 MB/s
-Round 13: Sorting completed in 23.00s
-Round 13: Queueing for I/O...
-Round 13: Completed and queued
-Round 14/40: Generating 107374182 hashes (nonce 1503238548 to 1610612729)
-Round 14: Hash generation completed in 5.91s (18.17 MH/s)
-Round 14: Sorting 107374182 records...
-[440s] Progress: 37.5% | Hash Rate: 3.66 MH/s | I/O: 65.16 MB/s
-[450s] Progress: 37.5% | Hash Rate: 3.58 MH/s | I/O: 63.71 MB/s
-[460s] Progress: 37.5% | Hash Rate: 3.50 MH/s | I/O: 62.33 MB/s
-Round 14: Sorting completed in 23.26s
-Round 14: Queueing for I/O...
-Round 14: Completed and queued
-Round 15/40: Generating 107374182 hashes (nonce 1610612730 to 1717986911)
-Round 15: Hash generation completed in 5.90s (18.20 MH/s)
-Round 15: Sorting 107374182 records...
-[470s] Progress: 40.0% | Hash Rate: 3.66 MH/s | I/O: 65.36 MB/s
-[480s] Progress: 40.0% | Hash Rate: 3.58 MH/s | I/O: 64.00 MB/s
-[490s] Progress: 40.0% | Hash Rate: 3.51 MH/s | I/O: 62.69 MB/s
-Round 15: Sorting completed in 23.18s
-Round 15: Queueing for I/O...
-Round 15: Completed and queued
-Round 16/40: Generating 107374182 hashes (nonce 1717986912 to 1825361093)
-Round 16: Hash generation completed in 6.03s (17.79 MH/s)
-Round 16: Sorting 107374182 records...
-[500s] Progress: 42.5% | Hash Rate: 3.65 MH/s | I/O: 65.53 MB/s
-[510s] Progress: 42.5% | Hash Rate: 3.58 MH/s | I/O: 64.25 MB/s
-[520s] Progress: 42.5% | Hash Rate: 3.51 MH/s | I/O: 63.01 MB/s
-Round 16: Sorting completed in 24.03s
-Round 16: Queueing for I/O...
-Round 16: Completed and queued
-Round 17/40: Generating 107374182 hashes (nonce 1825361094 to 1932735275)
-[530s] Progress: 44.9% | Hash Rate: 3.64 MH/s | I/O: 65.69 MB/s
-Round 17: Hash generation completed in 6.02s (17.84 MH/s)
-Round 17: Sorting 107374182 records...
-[540s] Progress: 45.0% | Hash Rate: 3.58 MH/s | I/O: 64.47 MB/s
-[550s] Progress: 45.0% | Hash Rate: 3.51 MH/s | I/O: 63.30 MB/s
-Round 17: Sorting completed in 23.16s
-Round 17: Queueing for I/O...
-Round 17: Completed and queued
-Round 18/40: Generating 107374182 hashes (nonce 1932735276 to 2040109457)
-[560s] Progress: 47.2% | Hash Rate: 3.62 MH/s | I/O: 65.83 MB/s
-Round 18: Hash generation completed in 6.02s (17.84 MH/s)
-Round 18: Sorting 107374182 records...
-[570s] Progress: 47.5% | Hash Rate: 3.58 MH/s | I/O: 64.67 MB/s
-[580s] Progress: 47.5% | Hash Rate: 3.52 MH/s | I/O: 63.56 MB/s
-Round 18: Sorting completed in 23.02s
-Round 18: Queueing for I/O...
-Round 18: Completed and queued
-Round 19/40: Generating 107374182 hashes (nonce 2040109458 to 2147483639)
-[590s] Progress: 49.6% | Hash Rate: 3.61 MH/s | I/O: 65.95 MB/s
-Round 19: Hash generation completed in 6.01s (17.87 MH/s)
-Round 19: Sorting 107374182 records...
-[600s] Progress: 50.0% | Hash Rate: 3.58 MH/s | I/O: 64.85 MB/s
-[610s] Progress: 50.0% | Hash Rate: 3.52 MH/s | I/O: 63.79 MB/s
-Round 19: Sorting completed in 23.23s
-Round 19: Queueing for I/O...
-Round 19: Completed and queued
-Round 20/40: Generating 107374182 hashes (nonce 2147483640 to 2254857821)
-[620s] Progress: 51.9% | Hash Rate: 3.59 MH/s | I/O: 66.06 MB/s
-Round 20: Hash generation completed in 6.00s (17.91 MH/s)
-Round 20: Sorting 107374182 records...
-[630s] Progress: 52.5% | Hash Rate: 3.58 MH/s | I/O: 65.01 MB/s
-[640s] Progress: 52.5% | Hash Rate: 3.52 MH/s | I/O: 64.00 MB/s
-Round 20: Sorting completed in 23.37s
-Round 20: Queueing for I/O...
-Round 20: Completed and queued
-Round 21/40: Generating 107374182 hashes (nonce 2254857822 to 2362232003)
-[650s] Progress: 54.1% | Hash Rate: 3.57 MH/s | I/O: 66.16 MB/s
-Round 21: Hash generation completed in 5.99s (17.91 MH/s)
-Round 21: Sorting 107374182 records...
-[660s] Progress: 55.0% | Hash Rate: 3.58 MH/s | I/O: 65.16 MB/s
-[670s] Progress: 55.0% | Hash Rate: 3.53 MH/s | I/O: 64.19 MB/s
-Round 21: Sorting completed in 23.07s
-Round 21: Queueing for I/O...
-Round 21: Completed and queued
-Round 22/40: Generating 107374182 hashes (nonce 2362232004 to 2469606185)
-[680s] Progress: 56.4% | Hash Rate: 3.57 MH/s | I/O: 66.26 MB/s
-Round 22: Hash generation completed in 6.00s (17.91 MH/s)
-Round 22: Sorting 107374182 records...
-[690s] Progress: 57.5% | Hash Rate: 3.58 MH/s | I/O: 65.30 MB/s
-[700s] Progress: 57.5% | Hash Rate: 3.53 MH/s | I/O: 64.36 MB/s
-Round 22: Sorting completed in 23.25s
-Round 22: Queueing for I/O...
-Round 22: Completed and queued
-Round 23/40: Generating 107374182 hashes (nonce 2469606186 to 2576980367)
-[710s] Progress: 58.7% | Hash Rate: 3.55 MH/s | I/O: 66.34 MB/s
-Round 23: Hash generation completed in 6.03s (17.80 MH/s)
-Round 23: Sorting 107374182 records...
-[720s] Progress: 60.0% | Hash Rate: 3.58 MH/s | I/O: 65.42 MB/s
-[730s] Progress: 60.0% | Hash Rate: 3.53 MH/s | I/O: 64.52 MB/s
-Round 23: Sorting completed in 23.24s
-Round 23: Queueing for I/O...
-Round 23: Completed and queued
-Round 24/40: Generating 107374182 hashes (nonce 2576980368 to 2684354549)
-[740s] Progress: 61.0% | Hash Rate: 3.54 MH/s | I/O: 66.42 MB/s
-Round 24: Hash generation completed in 6.00s (17.90 MH/s)
-Round 24: Sorting 107374182 records...
-[750s] Progress: 62.5% | Hash Rate: 3.58 MH/s | I/O: 65.53 MB/s
-[760s] Progress: 62.5% | Hash Rate: 3.53 MH/s | I/O: 64.67 MB/s
-Round 24: Sorting completed in 23.33s
-Round 24: Queueing for I/O...
-Round 24: Completed and queued
-Round 25/40: Generating 107374182 hashes (nonce 2684354550 to 2791728731)
-[770s] Progress: 63.2% | Hash Rate: 3.53 MH/s | I/O: 66.49 MB/s
-Round 25: Hash generation completed in 6.04s (17.78 MH/s)
-Round 25: Sorting 107374182 records...
-[780s] Progress: 65.0% | Hash Rate: 3.58 MH/s | I/O: 65.64 MB/s
-[790s] Progress: 65.0% | Hash Rate: 3.53 MH/s | I/O: 64.81 MB/s
-Round 25: Sorting completed in 24.05s
-Round 25: Queueing for I/O...
-Round 25: Completed and queued
-Round 26/40: Generating 107374182 hashes (nonce 2791728732 to 2899102913)
-[800s] Progress: 65.2% | Hash Rate: 3.50 MH/s | I/O: 66.56 MB/s
-Round 26: Hash generation completed in 6.03s (17.79 MH/s)
-Round 26: Sorting 107374182 records...
-[810s] Progress: 67.5% | Hash Rate: 3.58 MH/s | I/O: 65.74 MB/s
-[820s] Progress: 67.5% | Hash Rate: 3.54 MH/s | I/O: 64.93 MB/s
-Round 26: Sorting completed in 24.38s
-Round 26: Queueing for I/O...
-Round 26: Completed and queued
-Round 27/40: Generating 107374182 hashes (nonce 2899102914 to 3006477095)
-[830s] Progress: 67.5% | Hash Rate: 3.49 MH/s | I/O: 64.15 MB/s
-Round 27: Hash generation completed in 6.09s (17.62 MH/s)
-Round 27: Sorting 107374182 records...
-[840s] Progress: 70.0% | Hash Rate: 3.58 MH/s | I/O: 65.83 MB/s
-[850s] Progress: 70.0% | Hash Rate: 3.54 MH/s | I/O: 65.05 MB/s
-[860s] Progress: 70.0% | Hash Rate: 3.50 MH/s | I/O: 64.30 MB/s
-Round 27: Sorting completed in 24.68s
-Round 27: Queueing for I/O...
-Round 27: Completed and queued
-Round 28/40: Generating 107374182 hashes (nonce 3006477096 to 3113851277)
-Round 28: Hash generation completed in 6.20s (17.31 MH/s)
-Round 28: Sorting 107374182 records...
-[870s] Progress: 72.5% | Hash Rate: 3.58 MH/s | I/O: 65.91 MB/s
-[880s] Progress: 72.5% | Hash Rate: 3.54 MH/s | I/O: 65.16 MB/s
-[890s] Progress: 72.5% | Hash Rate: 3.50 MH/s | I/O: 64.43 MB/s
-Round 28: Sorting completed in 23.81s
-Round 28: Queueing for I/O...
-Round 28: Completed and queued
-Round 29/40: Generating 107374182 hashes (nonce 3113851278 to 3221225459)
-[900s] Progress: 74.7% | Hash Rate: 3.56 MH/s | I/O: 65.99 MB/s
-Round 29: Hash generation completed in 6.19s (17.34 MH/s)
-Round 29: Sorting 107374182 records...
-[910s] Progress: 75.0% | Hash Rate: 3.54 MH/s | I/O: 65.26 MB/s
-[920s] Progress: 75.0% | Hash Rate: 3.50 MH/s | I/O: 64.55 MB/s
-Round 29: Sorting completed in 23.88s
-Round 29: Queueing for I/O...
-Round 29: Completed and queued
-Round 30/40: Generating 107374182 hashes (nonce 3221225460 to 3328599641)
-[930s] Progress: 76.6% | Hash Rate: 3.54 MH/s | I/O: 66.06 MB/s
-Round 30: Hash generation completed in 6.20s (17.31 MH/s)
-Round 30: Sorting 107374182 records...
-[940s] Progress: 77.5% | Hash Rate: 3.54 MH/s | I/O: 65.36 MB/s
-[950s] Progress: 77.5% | Hash Rate: 3.50 MH/s | I/O: 64.67 MB/s
-Round 30: Sorting completed in 23.20s
-Round 30: Queueing for I/O...
-Round 30: Completed and queued
-Round 31/40: Generating 107374182 hashes (nonce 3328599642 to 3435973823)
-[960s] Progress: 78.8% | Hash Rate: 3.53 MH/s | I/O: 66.13 MB/s
-Round 31: Hash generation completed in 6.21s (17.30 MH/s)
-Round 31: Sorting 107374182 records...
-[970s] Progress: 80.0% | Hash Rate: 3.54 MH/s | I/O: 65.45 MB/s
-[980s] Progress: 80.0% | Hash Rate: 3.51 MH/s | I/O: 64.78 MB/s
-Round 31: Sorting completed in 23.30s
-Round 31: Queueing for I/O...
-Round 31: Completed and queued
-Round 32/40: Generating 107374182 hashes (nonce 3435973824 to 3543348005)
-[990s] Progress: 81.0% | Hash Rate: 3.51 MH/s | I/O: 66.20 MB/s
-Round 32: Hash generation completed in 6.21s (17.28 MH/s)
-Round 32: Sorting 107374182 records...
-[1000s] Progress: 82.5% | Hash Rate: 3.54 MH/s | I/O: 65.53 MB/s
-[1010s] Progress: 82.5% | Hash Rate: 3.51 MH/s | I/O: 64.89 MB/s
-Round 32: Sorting completed in 23.44s
-Round 32: Queueing for I/O...
-Round 32: Completed and queued
-Round 33/40: Generating 107374182 hashes (nonce 3543348006 to 3650722187)
-[1020s] Progress: 83.1% | Hash Rate: 3.50 MH/s | I/O: 66.26 MB/s
-Round 33: Hash generation completed in 6.21s (17.29 MH/s)
-Round 33: Sorting 107374182 records...
-[1030s] Progress: 85.0% | Hash Rate: 3.54 MH/s | I/O: 65.61 MB/s
-[1040s] Progress: 85.0% | Hash Rate: 3.51 MH/s | I/O: 64.98 MB/s
-Round 33: Sorting completed in 23.20s
-Round 33: Queueing for I/O...
-Round 33: Completed and queued
-Round 34/40: Generating 107374182 hashes (nonce 3650722188 to 3758096369)
-[1050s] Progress: 85.4% | Hash Rate: 3.49 MH/s | I/O: 66.31 MB/s
-Round 34: Hash generation completed in 6.21s (17.30 MH/s)
-Round 34: Sorting 107374182 records...
-[1060s] Progress: 87.5% | Hash Rate: 3.55 MH/s | I/O: 65.69 MB/s
-[1070s] Progress: 87.5% | Hash Rate: 3.51 MH/s | I/O: 65.08 MB/s
-Round 34: Sorting completed in 23.26s
-Round 34: Queueing for I/O...
-Round 34: Completed and queued
-Round 35/40: Generating 107374182 hashes (nonce 3758096370 to 3865470551)
-[1080s] Progress: 87.6% | Hash Rate: 3.48 MH/s | I/O: 64.47 MB/s
-Round 35: Hash generation completed in 6.21s (17.30 MH/s)
-Round 35: Sorting 107374182 records...
-[1090s] Progress: 90.0% | Hash Rate: 3.55 MH/s | I/O: 65.76 MB/s
-[1100s] Progress: 90.0% | Hash Rate: 3.51 MH/s | I/O: 65.16 MB/s
-Round 35: Sorting completed in 23.16s
-Round 35: Queueing for I/O...
-Round 35: Completed and queued
-Round 36/40: Generating 107374182 hashes (nonce 3865470552 to 3972844733)
-[1110s] Progress: 90.0% | Hash Rate: 3.48 MH/s | I/O: 64.57 MB/s
-Round 36: Hash generation completed in 6.21s (17.28 MH/s)
-Round 36: Sorting 107374182 records...
-[1120s] Progress: 92.5% | Hash Rate: 3.55 MH/s | I/O: 65.83 MB/s
-[1130s] Progress: 92.5% | Hash Rate: 3.52 MH/s | I/O: 65.24 MB/s
-Round 36: Sorting completed in 23.26s
-Round 36: Queueing for I/O...
-Round 36: Completed and queued
-Round 37/40: Generating 107374182 hashes (nonce 3972844734 to 4080218915)
-[1140s] Progress: 92.5% | Hash Rate: 3.48 MH/s | I/O: 64.67 MB/s
-Round 37: Hash generation completed in 6.12s (17.53 MH/s)
-Round 37: Sorting 107374182 records...
-[1150s] Progress: 95.0% | Hash Rate: 3.55 MH/s | I/O: 65.89 MB/s
-[1160s] Progress: 95.0% | Hash Rate: 3.52 MH/s | I/O: 65.32 MB/s
-[1170s] Progress: 95.0% | Hash Rate: 3.49 MH/s | I/O: 64.76 MB/s
-Round 37: Sorting completed in 23.50s
-Round 37: Queueing for I/O...
-Round 37: Completed and queued
-Round 38/40: Generating 107374182 hashes (nonce 4080218916 to 4187593097)
-Round 38: Hash generation completed in 6.13s (17.52 MH/s)
-Round 38: Sorting 107374182 records...
-[1180s] Progress: 97.5% | Hash Rate: 3.55 MH/s | I/O: 65.95 MB/s
-[1190s] Progress: 97.5% | Hash Rate: 3.52 MH/s | I/O: 65.40 MB/s
-[1200s] Progress: 97.5% | Hash Rate: 3.49 MH/s | I/O: 64.85 MB/s
-Round 38: Sorting completed in 23.46s
-Round 38: Queueing for I/O...
-Round 38: Completed and queued
-Round 39/40: Generating 107374182 hashes (nonce 4187593098 to 4294967279)
-Round 39: Hash generation completed in 6.00s (17.89 MH/s)
-Round 39: Sorting 107374182 records...
-[1210s] Progress: 100.0% | Hash Rate: 3.55 MH/s | I/O: 66.01 MB/s
-[1220s] Progress: 100.0% | Hash Rate: 3.52 MH/s | I/O: 65.47 MB/s
-[1230s] Progress: 100.0% | Hash Rate: 3.49 MH/s | I/O: 64.93 MB/s
-Round 39: Sorting completed in 23.16s
-Round 39: Queueing for I/O...
-Round 39: Completed and queued
-Round 40/40: Generating 16 hashes (nonce 4294967280 to 4294967295)
-Round 40: Hash generation completed in 0.00s (0.11 MH/s)
-Round 40: Sorting 16 records...
-Round 40: Sorting completed in 0.00s
-Round 40: Queueing for I/O...
-Round 40: Completed and queued
+[Round 1/32] Generating 134217728 hashes...
+[2s] Progress: 0.3% | Round: 1/32 | Hash Rate: 6.5065 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[4s] Progress: 1.1% | Round: 1/32 | Hash Rate: 12.0542 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[6s] Progress: 1.9% | Round: 1/32 | Hash Rate: 13.9210 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[8s] Progress: 2.8% | Round: 1/32 | Hash Rate: 14.8046 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[Round 1] Hash generation: 8.8535s (15.1598 MH/s)
+[Round 1] Sorting 134217728 records...
+[10s] Progress: 3.1% | Round: 1/32 | Hash Rate: 13.4202 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[12s] Progress: 3.1% | Round: 1/32 | Hash Rate: 11.1835 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[14s] Progress: 3.1% | Round: 1/32 | Hash Rate: 9.5858 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[16s] Progress: 3.1% | Round: 1/32 | Hash Rate: 8.3876 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[18s] Progress: 3.1% | Round: 1/32 | Hash Rate: 7.4556 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[20s] Progress: 3.1% | Round: 1/32 | Hash Rate: 6.7100 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[22s] Progress: 3.1% | Round: 1/32 | Hash Rate: 6.1000 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[24s] Progress: 3.1% | Round: 1/32 | Hash Rate: 5.5917 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[26s] Progress: 3.1% | Round: 1/32 | Hash Rate: 5.1615 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[28s] Progress: 3.1% | Round: 1/32 | Hash Rate: 4.7929 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[30s] Progress: 3.1% | Round: 1/32 | Hash Rate: 4.4733 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[32s] Progress: 3.1% | Round: 1/32 | Hash Rate: 4.1938 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[34s] Progress: 3.1% | Round: 1/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[36s] Progress: 3.1% | Round: 1/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[38s] Progress: 3.1% | Round: 1/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[40s] Progress: 3.1% | Round: 1/32 | Hash Rate: 3.3550 MH/s | I/O Rate: 0.0000 MB/s | I/O Blocks: 0
+[Round 1] Sorting completed: 31.5113s
+[Round 1] Queueing for I/O...
+[Round 2/32] Generating 134217728 hashes...
+[42s] Progress: 3.3% | Round: 2/32 | Hash Rate: 3.3597 MH/s | I/O Rate: 48.7555 MB/s | I/O Blocks: 1
+[44s] Progress: 4.1% | Round: 2/32 | Hash Rate: 3.9935 MH/s | I/O Rate: 46.5395 MB/s | I/O Blocks: 1
+[46s] Progress: 4.9% | Round: 2/32 | Hash Rate: 4.5651 MH/s | I/O Rate: 44.5162 MB/s | I/O Blocks: 1
+[I/O 0] Synced 2.0000 GB
+[48s] Progress: 5.7% | Round: 2/32 | Hash Rate: 5.0888 MH/s | I/O Rate: 42.6615 MB/s | I/O Blocks: 1
+[Round 2] Hash generation: 8.9794s (14.9473 MH/s)
+[Round 2] Sorting 134217728 records...
+[50s] Progress: 6.2% | Round: 2/32 | Hash Rate: 5.3681 MH/s | I/O Rate: 40.9551 MB/s | I/O Blocks: 1
+[52s] Progress: 6.2% | Round: 2/32 | Hash Rate: 5.1616 MH/s | I/O Rate: 39.3799 MB/s | I/O Blocks: 1
+[54s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.9704 MH/s | I/O Rate: 37.9214 MB/s | I/O Blocks: 1
+[56s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.7929 MH/s | I/O Rate: 36.5671 MB/s | I/O Blocks: 1
+[58s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.6276 MH/s | I/O Rate: 35.3061 MB/s | I/O Blocks: 1
+[60s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.4734 MH/s | I/O Rate: 34.1292 MB/s | I/O Blocks: 1
+[62s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.3291 MH/s | I/O Rate: 33.0283 MB/s | I/O Blocks: 1
+[64s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.1938 MH/s | I/O Rate: 31.9962 MB/s | I/O Blocks: 1
+[66s] Progress: 6.2% | Round: 2/32 | Hash Rate: 4.0667 MH/s | I/O Rate: 31.0266 MB/s | I/O Blocks: 1
+[68s] Progress: 6.2% | Round: 2/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 30.1140 MB/s | I/O Blocks: 1
+[70s] Progress: 6.2% | Round: 2/32 | Hash Rate: 3.8343 MH/s | I/O Rate: 29.2536 MB/s | I/O Blocks: 1
+[72s] Progress: 6.2% | Round: 2/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 28.4410 MB/s | I/O Blocks: 1
+[74s] Progress: 6.2% | Round: 2/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 27.6724 MB/s | I/O Blocks: 1
+[76s] Progress: 6.2% | Round: 2/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 26.9442 MB/s | I/O Blocks: 1
+[Round 2] Sorting completed: 28.3948s
+[Round 2] Queueing for I/O...
+[Round 3/32] Generating 134217728 hashes...
+[78s] Progress: 6.2% | Round: 3/32 | Hash Rate: 3.4411 MH/s | I/O Rate: 26.2533 MB/s | I/O Blocks: 1
+[80s] Progress: 6.6% | Round: 3/32 | Hash Rate: 3.5675 MH/s | I/O Rate: 51.1940 MB/s | I/O Blocks: 2
+[82s] Progress: 7.4% | Round: 3/32 | Hash Rate: 3.8987 MH/s | I/O Rate: 49.9454 MB/s | I/O Blocks: 2
+[I/O 0] Synced 4.0000 GB
+[84s] Progress: 8.2% | Round: 3/32 | Hash Rate: 4.2142 MH/s | I/O Rate: 48.7563 MB/s | I/O Blocks: 2
+[86s] Progress: 9.0% | Round: 3/32 | Hash Rate: 4.5152 MH/s | I/O Rate: 47.6225 MB/s | I/O Blocks: 2
+[Round 3] Hash generation: 9.0220s (14.8767 MH/s)
+[Round 3] Sorting 134217728 records...
+[88s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.5751 MH/s | I/O Rate: 46.5402 MB/s | I/O Blocks: 2
+[90s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.4734 MH/s | I/O Rate: 45.5060 MB/s | I/O Blocks: 2
+[92s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.3762 MH/s | I/O Rate: 44.5168 MB/s | I/O Blocks: 2
+[94s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.2831 MH/s | I/O Rate: 43.5696 MB/s | I/O Blocks: 2
+[96s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.1938 MH/s | I/O Rate: 42.6619 MB/s | I/O Blocks: 2
+[98s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.1082 MH/s | I/O Rate: 41.7912 MB/s | I/O Blocks: 2
+[100s] Progress: 9.4% | Round: 3/32 | Hash Rate: 4.0261 MH/s | I/O Rate: 40.9554 MB/s | I/O Blocks: 2
+[102s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 40.1523 MB/s | I/O Blocks: 2
+[104s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.8712 MH/s | I/O Rate: 39.3802 MB/s | I/O Blocks: 2
+[106s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.7982 MH/s | I/O Rate: 38.6371 MB/s | I/O Blocks: 2
+[108s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 37.9216 MB/s | I/O Blocks: 2
+[110s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.6601 MH/s | I/O Rate: 37.2322 MB/s | I/O Blocks: 2
+[112s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 36.5673 MB/s | I/O Blocks: 2
+[114s] Progress: 9.4% | Round: 3/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 35.9257 MB/s | I/O Blocks: 2
+[Round 3] Sorting completed: 28.5160s
+[Round 3] Queueing for I/O...
+[Round 4/32] Generating 134217728 hashes...
+[116s] Progress: 9.4% | Round: 4/32 | Hash Rate: 3.4708 MH/s | I/O Rate: 35.3063 MB/s | I/O Blocks: 2
+[118s] Progress: 10.0% | Round: 4/32 | Hash Rate: 3.6235 MH/s | I/O Rate: 52.0619 MB/s | I/O Blocks: 3
+[120s] Progress: 10.8% | Round: 4/32 | Hash Rate: 3.8489 MH/s | I/O Rate: 51.1943 MB/s | I/O Blocks: 3
+[I/O 0] Synced 6.0000 GB
+[122s] Progress: 11.6% | Round: 4/32 | Hash Rate: 4.0671 MH/s | I/O Rate: 50.3551 MB/s | I/O Blocks: 3
+[124s] Progress: 12.4% | Round: 4/32 | Hash Rate: 4.2787 MH/s | I/O Rate: 49.5429 MB/s | I/O Blocks: 3
+[Round 4] Hash generation: 9.0322s (14.8600 MH/s)
+[Round 4] Sorting 134217728 records...
+[126s] Progress: 12.5% | Round: 4/32 | Hash Rate: 4.2604 MH/s | I/O Rate: 48.7565 MB/s | I/O Blocks: 3
+[128s] Progress: 12.5% | Round: 4/32 | Hash Rate: 4.1938 MH/s | I/O Rate: 47.9947 MB/s | I/O Blocks: 3
+[130s] Progress: 12.5% | Round: 4/32 | Hash Rate: 4.1293 MH/s | I/O Rate: 47.2564 MB/s | I/O Blocks: 3
+[132s] Progress: 12.5% | Round: 4/32 | Hash Rate: 4.0668 MH/s | I/O Rate: 46.5404 MB/s | I/O Blocks: 3
+[134s] Progress: 12.5% | Round: 4/32 | Hash Rate: 4.0061 MH/s | I/O Rate: 45.8457 MB/s | I/O Blocks: 3
+[136s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 45.1715 MB/s | I/O Blocks: 3
+[138s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.8899 MH/s | I/O Rate: 44.5169 MB/s | I/O Blocks: 3
+[140s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.8344 MH/s | I/O Rate: 43.8809 MB/s | I/O Blocks: 3
+[142s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.7804 MH/s | I/O Rate: 43.2628 MB/s | I/O Blocks: 3
+[144s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.7279 MH/s | I/O Rate: 42.6620 MB/s | I/O Blocks: 3
+[146s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.6768 MH/s | I/O Rate: 42.0775 MB/s | I/O Blocks: 3
+[148s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 41.5089 MB/s | I/O Blocks: 3
+[150s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 40.9554 MB/s | I/O Blocks: 3
+[152s] Progress: 12.5% | Round: 4/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 40.4165 MB/s | I/O Blocks: 3
+[Round 4] Sorting completed: 28.6701s
+[Round 4] Queueing for I/O...
+[Round 5/32] Generating 134217728 hashes...
+[154s] Progress: 12.5% | Round: 5/32 | Hash Rate: 3.4858 MH/s | I/O Rate: 39.8916 MB/s | I/O Blocks: 3
+[156s] Progress: 13.2% | Round: 5/32 | Hash Rate: 3.6322 MH/s | I/O Rate: 52.5069 MB/s | I/O Blocks: 4
+[158s] Progress: 14.0% | Round: 5/32 | Hash Rate: 3.8032 MH/s | I/O Rate: 51.8423 MB/s | I/O Blocks: 4
+[I/O 0] Synced 8.0000 GB
+[160s] Progress: 14.8% | Round: 5/32 | Hash Rate: 3.9699 MH/s | I/O Rate: 51.1943 MB/s | I/O Blocks: 4
+[162s] Progress: 15.6% | Round: 5/32 | Hash Rate: 4.1355 MH/s | I/O Rate: 50.5623 MB/s | I/O Blocks: 4
+[Round 5] Hash generation: 9.0859s (14.7720 MH/s)
+[Round 5] Sorting 134217728 records...
+[164s] Progress: 15.6% | Round: 5/32 | Hash Rate: 4.0916 MH/s | I/O Rate: 49.9457 MB/s | I/O Blocks: 4
+[166s] Progress: 15.6% | Round: 5/32 | Hash Rate: 4.0423 MH/s | I/O Rate: 49.3440 MB/s | I/O Blocks: 4
+[168s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.9941 MH/s | I/O Rate: 48.7565 MB/s | I/O Blocks: 4
+[170s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 48.1829 MB/s | I/O Blocks: 4
+[172s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.9013 MH/s | I/O Rate: 47.6227 MB/s | I/O Blocks: 4
+[174s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.8564 MH/s | I/O Rate: 47.0753 MB/s | I/O Blocks: 4
+[176s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.8126 MH/s | I/O Rate: 46.5404 MB/s | I/O Blocks: 4
+[178s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.7697 MH/s | I/O Rate: 46.0175 MB/s | I/O Blocks: 4
+[180s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.7279 MH/s | I/O Rate: 45.5062 MB/s | I/O Blocks: 4
+[182s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.6869 MH/s | I/O Rate: 45.0061 MB/s | I/O Blocks: 4
+[184s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.6468 MH/s | I/O Rate: 44.5169 MB/s | I/O Blocks: 4
+[186s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 44.0382 MB/s | I/O Blocks: 4
+[188s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 43.5697 MB/s | I/O Blocks: 4
+[190s] Progress: 15.6% | Round: 5/32 | Hash Rate: 3.5317 MH/s | I/O Rate: 43.1111 MB/s | I/O Blocks: 4
+[Round 5] Sorting completed: 28.9467s
+[Round 5] Queueing for I/O...
+[Round 6/32] Generating 134217728 hashes...
+[192s] Progress: 15.6% | Round: 6/32 | Hash Rate: 3.4949 MH/s | I/O Rate: 42.6620 MB/s | I/O Blocks: 4
+[194s] Progress: 16.3% | Round: 6/32 | Hash Rate: 3.6108 MH/s | I/O Rate: 52.7778 MB/s | I/O Blocks: 5
+[196s] Progress: 17.1% | Round: 6/32 | Hash Rate: 3.7485 MH/s | I/O Rate: 52.2392 MB/s | I/O Blocks: 5
+[I/O 0] Synced 10.0000 GB
+[198s] Progress: 17.9% | Round: 6/32 | Hash Rate: 3.8836 MH/s | I/O Rate: 51.7116 MB/s | I/O Blocks: 5
+[200s] Progress: 18.7% | Round: 6/32 | Hash Rate: 4.0196 MH/s | I/O Rate: 51.1945 MB/s | I/O Blocks: 5
+[Round 6] Hash generation: 9.0722s (14.7944 MH/s)
+[Round 6] Sorting 134217728 records...
+[202s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.9862 MH/s | I/O Rate: 50.6876 MB/s | I/O Blocks: 5
+[204s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.9472 MH/s | I/O Rate: 50.1907 MB/s | I/O Blocks: 5
+[206s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.9088 MH/s | I/O Rate: 49.7033 MB/s | I/O Blocks: 5
+[208s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.8712 MH/s | I/O Rate: 49.2254 MB/s | I/O Blocks: 5
+[210s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.8344 MH/s | I/O Rate: 48.7566 MB/s | I/O Blocks: 5
+[212s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.7982 MH/s | I/O Rate: 48.2966 MB/s | I/O Blocks: 5
+[214s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.7627 MH/s | I/O Rate: 47.8452 MB/s | I/O Blocks: 5
+[216s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.7279 MH/s | I/O Rate: 47.4022 MB/s | I/O Blocks: 5
+[218s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.6937 MH/s | I/O Rate: 46.9673 MB/s | I/O Blocks: 5
+[220s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.6601 MH/s | I/O Rate: 46.5403 MB/s | I/O Blocks: 5
+[222s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 46.1210 MB/s | I/O Blocks: 5
+[224s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 45.7092 MB/s | I/O Blocks: 5
+[226s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.5629 MH/s | I/O Rate: 45.3047 MB/s | I/O Blocks: 5
+[228s] Progress: 18.8% | Round: 6/32 | Hash Rate: 3.5317 MH/s | I/O Rate: 44.9073 MB/s | I/O Blocks: 5
+[Round 6] Sorting completed: 28.4197s
+[Round 6] Queueing for I/O...
+[Round 7/32] Generating 134217728 hashes...
+[230s] Progress: 18.8% | Round: 7/32 | Hash Rate: 3.5188 MH/s | I/O Rate: 44.5168 MB/s | I/O Blocks: 5
+[232s] Progress: 19.6% | Round: 7/32 | Hash Rate: 3.6362 MH/s | I/O Rate: 52.9596 MB/s | I/O Blocks: 6
+[234s] Progress: 20.4% | Round: 7/32 | Hash Rate: 3.7517 MH/s | I/O Rate: 52.5069 MB/s | I/O Blocks: 6
+[I/O 0] Synced 12.0000 GB
+[236s] Progress: 21.2% | Round: 7/32 | Hash Rate: 3.8652 MH/s | I/O Rate: 52.0620 MB/s | I/O Blocks: 6
+[Round 7] Hash generation: 9.0610s (14.8128 MH/s)
+[Round 7] Sorting 134217728 records...
+[238s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.9471 MH/s | I/O Rate: 51.6245 MB/s | I/O Blocks: 6
+[240s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.9142 MH/s | I/O Rate: 51.1943 MB/s | I/O Blocks: 6
+[242s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.8819 MH/s | I/O Rate: 50.7712 MB/s | I/O Blocks: 6
+[244s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.8501 MH/s | I/O Rate: 50.3550 MB/s | I/O Blocks: 6
+[246s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.8188 MH/s | I/O Rate: 49.9456 MB/s | I/O Blocks: 6
+[248s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.7880 MH/s | I/O Rate: 49.5428 MB/s | I/O Blocks: 6
+[250s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.7577 MH/s | I/O Rate: 49.1464 MB/s | I/O Blocks: 6
+[252s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 48.7564 MB/s | I/O Blocks: 6
+[254s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.6985 MH/s | I/O Rate: 48.3725 MB/s | I/O Blocks: 6
+[256s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.6696 MH/s | I/O Rate: 47.9945 MB/s | I/O Blocks: 6
+[258s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.6412 MH/s | I/O Rate: 47.6225 MB/s | I/O Blocks: 6
+[260s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.6131 MH/s | I/O Rate: 47.2561 MB/s | I/O Blocks: 6
+[262s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.5856 MH/s | I/O Rate: 46.8954 MB/s | I/O Blocks: 6
+[264s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.5584 MH/s | I/O Rate: 46.5401 MB/s | I/O Blocks: 6
+[266s] Progress: 21.9% | Round: 7/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 46.1902 MB/s | I/O Blocks: 6
+[Round 7] Sorting completed: 29.2000s
+[Round 7] Queueing for I/O...
+[Round 8/32] Generating 134217728 hashes...
+[268s] Progress: 21.9% | Round: 8/32 | Hash Rate: 3.5053 MH/s | I/O Rate: 45.8455 MB/s | I/O Blocks: 6
+[270s] Progress: 22.7% | Round: 8/32 | Hash Rate: 3.6056 MH/s | I/O Rate: 53.0902 MB/s | I/O Blocks: 7
+[272s] Progress: 23.5% | Round: 8/32 | Hash Rate: 3.7053 MH/s | I/O Rate: 52.6998 MB/s | I/O Blocks: 7
+[I/O 0] Synced 14.0000 GB
+[274s] Progress: 24.3% | Round: 8/32 | Hash Rate: 3.8036 MH/s | I/O Rate: 52.3151 MB/s | I/O Blocks: 7
+[Round 8] Hash generation: 9.0410s (14.8454 MH/s)
+[Round 8] Sorting 134217728 records...
+[276s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.8899 MH/s | I/O Rate: 51.9361 MB/s | I/O Blocks: 7
+[278s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.8619 MH/s | I/O Rate: 51.5624 MB/s | I/O Blocks: 7
+[280s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.8344 MH/s | I/O Rate: 51.1941 MB/s | I/O Blocks: 7
+[282s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.8072 MH/s | I/O Rate: 50.8310 MB/s | I/O Blocks: 7
+[284s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.7803 MH/s | I/O Rate: 50.4730 MB/s | I/O Blocks: 7
+[286s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.7539 MH/s | I/O Rate: 50.1201 MB/s | I/O Blocks: 7
+[288s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 49.7720 MB/s | I/O Blocks: 7
+[290s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.7021 MH/s | I/O Rate: 49.4287 MB/s | I/O Blocks: 7
+[292s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.6768 MH/s | I/O Rate: 49.0902 MB/s | I/O Blocks: 7
+[294s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.6518 MH/s | I/O Rate: 48.7562 MB/s | I/O Blocks: 7
+[296s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 48.4268 MB/s | I/O Blocks: 7
+[298s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.6027 MH/s | I/O Rate: 48.1017 MB/s | I/O Blocks: 7
+[300s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 47.7811 MB/s | I/O Blocks: 7
+[302s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.5550 MH/s | I/O Rate: 47.4646 MB/s | I/O Blocks: 7
+[304s] Progress: 25.0% | Round: 8/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 47.1524 MB/s | I/O Blocks: 7
+[Round 8] Sorting completed: 28.6054s
+[Round 8] Queueing for I/O...
+[Round 9/32] Generating 134217728 hashes...
+[306s] Progress: 25.1% | Round: 9/32 | Hash Rate: 3.5278 MH/s | I/O Rate: 46.8442 MB/s | I/O Blocks: 7
+[308s] Progress: 25.9% | Round: 9/32 | Hash Rate: 3.6162 MH/s | I/O Rate: 53.1886 MB/s | I/O Blocks: 8
+[310s] Progress: 26.7% | Round: 9/32 | Hash Rate: 3.7035 MH/s | I/O Rate: 52.8454 MB/s | I/O Blocks: 8
+[I/O 0] Synced 16.0000 GB
+[312s] Progress: 27.5% | Round: 9/32 | Hash Rate: 3.7897 MH/s | I/O Rate: 52.5067 MB/s | I/O Blocks: 8
+[Round 9] Hash generation: 9.0533s (14.8252 MH/s)
+[Round 9] Sorting 134217728 records...
+[314s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.8466 MH/s | I/O Rate: 52.1722 MB/s | I/O Blocks: 8
+[316s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.8222 MH/s | I/O Rate: 51.8420 MB/s | I/O Blocks: 8
+[318s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.7982 MH/s | I/O Rate: 51.5159 MB/s | I/O Blocks: 8
+[320s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.7744 MH/s | I/O Rate: 51.1940 MB/s | I/O Blocks: 8
+[322s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.7510 MH/s | I/O Rate: 50.8760 MB/s | I/O Blocks: 8
+[324s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 50.5619 MB/s | I/O Blocks: 8
+[326s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.7050 MH/s | I/O Rate: 50.2517 MB/s | I/O Blocks: 8
+[328s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.6824 MH/s | I/O Rate: 49.9453 MB/s | I/O Blocks: 8
+[330s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.6600 MH/s | I/O Rate: 49.6426 MB/s | I/O Blocks: 8
+[332s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.6380 MH/s | I/O Rate: 49.3435 MB/s | I/O Blocks: 8
+[334s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.6162 MH/s | I/O Rate: 49.0481 MB/s | I/O Blocks: 8
+[336s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 48.7561 MB/s | I/O Blocks: 8
+[338s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.5734 MH/s | I/O Rate: 48.4676 MB/s | I/O Blocks: 8
+[340s] Progress: 28.1% | Round: 9/32 | Hash Rate: 3.5524 MH/s | I/O Rate: 48.1825 MB/s | I/O Blocks: 8
+[Round 9] Sorting completed: 28.4626s
+[Round 9] Queueing for I/O...
+[Round 10/32] Generating 134217728 hashes...
+[342s] Progress: 28.1% | Round: 10/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 47.9007 MB/s | I/O Blocks: 8
+[344s] Progress: 28.5% | Round: 10/32 | Hash Rate: 3.5524 MH/s | I/O Rate: 53.5750 MB/s | I/O Blocks: 9
+[346s] Progress: 29.3% | Round: 10/32 | Hash Rate: 3.6308 MH/s | I/O Rate: 53.2653 MB/s | I/O Blocks: 9
+[348s] Progress: 30.0% | Round: 10/32 | Hash Rate: 3.7082 MH/s | I/O Rate: 52.9592 MB/s | I/O Blocks: 9
+[I/O 0] Synced 18.0000 GB
+[350s] Progress: 30.8% | Round: 10/32 | Hash Rate: 3.7846 MH/s | I/O Rate: 52.6566 MB/s | I/O Blocks: 9
+[Round 10] Hash generation: 9.0601s (14.8142 MH/s)
+[Round 10] Sorting 134217728 records...
+[352s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.8125 MH/s | I/O Rate: 52.3574 MB/s | I/O Blocks: 9
+[354s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.7910 MH/s | I/O Rate: 52.0616 MB/s | I/O Blocks: 9
+[356s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.7697 MH/s | I/O Rate: 51.7691 MB/s | I/O Blocks: 9
+[358s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.7486 MH/s | I/O Rate: 51.4799 MB/s | I/O Blocks: 9
+[360s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 51.1939 MB/s | I/O Blocks: 9
+[362s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.7072 MH/s | I/O Rate: 50.9110 MB/s | I/O Blocks: 9
+[364s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.6869 MH/s | I/O Rate: 50.6313 MB/s | I/O Blocks: 9
+[366s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.6667 MH/s | I/O Rate: 50.3546 MB/s | I/O Blocks: 9
+[368s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.6468 MH/s | I/O Rate: 50.0809 MB/s | I/O Blocks: 9
+[370s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 49.8102 MB/s | I/O Blocks: 9
+[372s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 49.5424 MB/s | I/O Blocks: 9
+[374s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.5883 MH/s | I/O Rate: 49.2775 MB/s | I/O Blocks: 9
+[376s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 49.0154 MB/s | I/O Blocks: 9
+[378s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.5503 MH/s | I/O Rate: 48.7560 MB/s | I/O Blocks: 9
+[380s] Progress: 31.2% | Round: 10/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 48.4994 MB/s | I/O Blocks: 9
+[Round 10] Sorting completed: 29.1909s
+[Round 10] Queueing for I/O...
+[Round 11/32] Generating 134217728 hashes...
+[I/O 0] Writing block 10 (2048.0000 MB)
+[382s] Progress: 31.5% | Round: 11/32 | Hash Rate: 3.5387 MH/s | I/O Rate: 48.2455 MB/s | I/O Blocks: 9
+[384s] Progress: 32.3% | Round: 11/32 | Hash Rate: 3.6097 MH/s | I/O Rate: 53.3269 MB/s | I/O Blocks: 10
+[386s] Progress: 33.1% | Round: 11/32 | Hash Rate: 3.6800 MH/s | I/O Rate: 53.0506 MB/s | I/O Blocks: 10
+[I/O 0] Synced 20.0000 GB
+[388s] Progress: 33.9% | Round: 11/32 | Hash Rate: 3.7495 MH/s | I/O Rate: 52.7771 MB/s | I/O Blocks: 10
+[Round 11] Hash generation: 9.0695s (14.7988 MH/s)
+[Round 11] Sorting 134217728 records...
+[390s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.7852 MH/s | I/O Rate: 52.5065 MB/s | I/O Blocks: 10
+[392s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.7659 MH/s | I/O Rate: 52.2386 MB/s | I/O Blocks: 10
+[394s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.7467 MH/s | I/O Rate: 51.9734 MB/s | I/O Blocks: 10
+[396s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 51.7109 MB/s | I/O Blocks: 10
+[398s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.7091 MH/s | I/O Rate: 51.4510 MB/s | I/O Blocks: 10
+[400s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6905 MH/s | I/O Rate: 51.1938 MB/s | I/O Blocks: 10
+[402s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6722 MH/s | I/O Rate: 50.9391 MB/s | I/O Blocks: 10
+[404s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6540 MH/s | I/O Rate: 50.6869 MB/s | I/O Blocks: 10
+[406s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6360 MH/s | I/O Rate: 50.4372 MB/s | I/O Blocks: 10
+[408s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6182 MH/s | I/O Rate: 50.1900 MB/s | I/O Blocks: 10
+[410s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.6005 MH/s | I/O Rate: 49.9451 MB/s | I/O Blocks: 10
+[412s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.5830 MH/s | I/O Rate: 49.7027 MB/s | I/O Blocks: 10
+[414s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.5657 MH/s | I/O Rate: 49.4626 MB/s | I/O Blocks: 10
+[416s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.5486 MH/s | I/O Rate: 49.2248 MB/s | I/O Blocks: 10
+[418s] Progress: 34.4% | Round: 11/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 48.9892 MB/s | I/O Blocks: 10
+[Round 11] Sorting completed: 28.9353s
+[Round 11] Queueing for I/O...
+[Round 12/32] Generating 134217728 hashes...
+[420s] Progress: 34.6% | Round: 12/32 | Hash Rate: 3.5391 MH/s | I/O Rate: 53.6315 MB/s | I/O Blocks: 11
+[422s] Progress: 35.4% | Round: 12/32 | Hash Rate: 3.6037 MH/s | I/O Rate: 53.3774 MB/s | I/O Blocks: 11
+[424s] Progress: 36.2% | Round: 12/32 | Hash Rate: 3.6677 MH/s | I/O Rate: 53.1256 MB/s | I/O Blocks: 11
+[I/O 0] Synced 22.0000 GB
+[426s] Progress: 37.0% | Round: 12/32 | Hash Rate: 3.7311 MH/s | I/O Rate: 52.8761 MB/s | I/O Blocks: 11
+[Round 12] Hash generation: 9.0373s (14.8516 MH/s)
+[Round 12] Sorting 134217728 records...
+[428s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.7627 MH/s | I/O Rate: 52.6291 MB/s | I/O Blocks: 11
+[430s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.7452 MH/s | I/O Rate: 52.3843 MB/s | I/O Blocks: 11
+[432s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 52.1417 MB/s | I/O Blocks: 11
+[434s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.7106 MH/s | I/O Rate: 51.9014 MB/s | I/O Blocks: 11
+[436s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6936 MH/s | I/O Rate: 51.6634 MB/s | I/O Blocks: 11
+[438s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6767 MH/s | I/O Rate: 51.4275 MB/s | I/O Blocks: 11
+[440s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6600 MH/s | I/O Rate: 51.1937 MB/s | I/O Blocks: 11
+[442s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6435 MH/s | I/O Rate: 50.9620 MB/s | I/O Blocks: 11
+[444s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 50.7325 MB/s | I/O Blocks: 11
+[446s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.6108 MH/s | I/O Rate: 50.5050 MB/s | I/O Blocks: 11
+[448s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 50.2795 MB/s | I/O Blocks: 11
+[450s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 50.0560 MB/s | I/O Blocks: 11
+[452s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.5629 MH/s | I/O Rate: 49.8345 MB/s | I/O Blocks: 11
+[454s] Progress: 37.5% | Round: 12/32 | Hash Rate: 3.5472 MH/s | I/O Rate: 49.6150 MB/s | I/O Blocks: 11
+[Round 12] Sorting completed: 28.8032s
+[Round 12] Queueing for I/O...
+[Round 13/32] Generating 134217728 hashes...
+[456s] Progress: 37.5% | Round: 13/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 49.3974 MB/s | I/O Blocks: 11
+[458s] Progress: 37.8% | Round: 13/32 | Hash Rate: 3.5445 MH/s | I/O Rate: 53.6527 MB/s | I/O Blocks: 12
+[460s] Progress: 38.6% | Round: 13/32 | Hash Rate: 3.6037 MH/s | I/O Rate: 53.4195 MB/s | I/O Blocks: 12
+[462s] Progress: 39.4% | Round: 13/32 | Hash Rate: 3.6624 MH/s | I/O Rate: 53.1882 MB/s | I/O Blocks: 12
+[I/O 0] Synced 24.0000 GB
+[464s] Progress: 40.2% | Round: 13/32 | Hash Rate: 3.7203 MH/s | I/O Rate: 52.9590 MB/s | I/O Blocks: 12
+[Round 13] Hash generation: 9.0647s (14.8066 MH/s)
+[Round 13] Sorting 134217728 records...
+[466s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.7438 MH/s | I/O Rate: 52.7317 MB/s | I/O Blocks: 12
+[468s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.7278 MH/s | I/O Rate: 52.5063 MB/s | I/O Blocks: 12
+[470s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.7119 MH/s | I/O Rate: 52.2829 MB/s | I/O Blocks: 12
+[472s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6962 MH/s | I/O Rate: 52.0614 MB/s | I/O Blocks: 12
+[474s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6806 MH/s | I/O Rate: 51.8417 MB/s | I/O Blocks: 12
+[476s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6652 MH/s | I/O Rate: 51.6239 MB/s | I/O Blocks: 12
+[478s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6498 MH/s | I/O Rate: 51.4079 MB/s | I/O Blocks: 12
+[480s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6346 MH/s | I/O Rate: 51.1937 MB/s | I/O Blocks: 12
+[482s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6195 MH/s | I/O Rate: 50.9813 MB/s | I/O Blocks: 12
+[484s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.6046 MH/s | I/O Rate: 50.7706 MB/s | I/O Blocks: 12
+[486s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.5897 MH/s | I/O Rate: 50.5617 MB/s | I/O Blocks: 12
+[488s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.5750 MH/s | I/O Rate: 50.3545 MB/s | I/O Blocks: 12
+[490s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.5604 MH/s | I/O Rate: 50.1489 MB/s | I/O Blocks: 12
+[492s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.5460 MH/s | I/O Rate: 49.9451 MB/s | I/O Blocks: 12
+[494s] Progress: 40.6% | Round: 13/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 49.7429 MB/s | I/O Blocks: 12
+[Round 13] Sorting completed: 30.8711s
+[Round 13] Queueing for I/O...
+[Round 14/32] Generating 134217728 hashes...
+[496s] Progress: 40.6% | Round: 14/32 | Hash Rate: 3.5174 MH/s | I/O Rate: 49.5423 MB/s | I/O Blocks: 12
+[498s] Progress: 41.0% | Round: 14/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 49.3434 MB/s | I/O Blocks: 12
+[500s] Progress: 41.8% | Round: 14/32 | Hash Rate: 3.5889 MH/s | I/O Rate: 53.2415 MB/s | I/O Blocks: 13
+[502s] Progress: 42.6% | Round: 14/32 | Hash Rate: 3.6458 MH/s | I/O Rate: 53.0294 MB/s | I/O Blocks: 13
+[I/O 0] Synced 26.0000 GB
+[504s] Progress: 43.5% | Round: 14/32 | Hash Rate: 3.7023 MH/s | I/O Rate: 52.8189 MB/s | I/O Blocks: 13
+[Round 14] Hash generation: 8.7661s (15.3111 MH/s)
+[Round 14] Sorting 134217728 records...
+[506s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.7131 MH/s | I/O Rate: 52.6102 MB/s | I/O Blocks: 13
+[508s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6985 MH/s | I/O Rate: 52.4031 MB/s | I/O Blocks: 13
+[510s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6840 MH/s | I/O Rate: 52.1976 MB/s | I/O Blocks: 13
+[512s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6696 MH/s | I/O Rate: 51.9937 MB/s | I/O Blocks: 13
+[514s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6553 MH/s | I/O Rate: 51.7914 MB/s | I/O Blocks: 13
+[516s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6411 MH/s | I/O Rate: 51.5906 MB/s | I/O Blocks: 13
+[518s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 51.3914 MB/s | I/O Blocks: 13
+[520s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.6131 MH/s | I/O Rate: 51.1938 MB/s | I/O Blocks: 13
+[522s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5993 MH/s | I/O Rate: 50.9976 MB/s | I/O Blocks: 13
+[524s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5855 MH/s | I/O Rate: 50.8030 MB/s | I/O Blocks: 13
+[526s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5719 MH/s | I/O Rate: 50.6098 MB/s | I/O Blocks: 13
+[528s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5584 MH/s | I/O Rate: 50.4181 MB/s | I/O Blocks: 13
+[530s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5449 MH/s | I/O Rate: 50.2279 MB/s | I/O Blocks: 13
+[532s] Progress: 43.8% | Round: 14/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 50.0391 MB/s | I/O Blocks: 13
+[Round 14] Sorting completed: 28.5184s
+[Round 14] Queueing for I/O...
+[Round 15/32] Generating 134217728 hashes...
+[534s] Progress: 43.8% | Round: 15/32 | Hash Rate: 3.5184 MH/s | I/O Rate: 49.8516 MB/s | I/O Blocks: 13
+[536s] Progress: 44.4% | Round: 15/32 | Hash Rate: 3.5572 MH/s | I/O Rate: 53.4861 MB/s | I/O Blocks: 14
+[538s] Progress: 45.2% | Round: 15/32 | Hash Rate: 3.6105 MH/s | I/O Rate: 53.2873 MB/s | I/O Blocks: 14
+[I/O 0] Synced 28.0000 GB
+[540s] Progress: 46.1% | Round: 15/32 | Hash Rate: 3.6635 MH/s | I/O Rate: 53.0899 MB/s | I/O Blocks: 14
+[Round 15] Hash generation: 8.7031s (15.4219 MH/s)
+[Round 15] Sorting 134217728 records...
+[542s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.7141 MH/s | I/O Rate: 52.8940 MB/s | I/O Blocks: 14
+[544s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.7004 MH/s | I/O Rate: 52.6996 MB/s | I/O Blocks: 14
+[546s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6869 MH/s | I/O Rate: 52.5065 MB/s | I/O Blocks: 14
+[548s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6734 MH/s | I/O Rate: 52.3149 MB/s | I/O Blocks: 14
+[550s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6600 MH/s | I/O Rate: 52.1247 MB/s | I/O Blocks: 14
+[552s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6468 MH/s | I/O Rate: 51.9358 MB/s | I/O Blocks: 14
+[554s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6336 MH/s | I/O Rate: 51.7484 MB/s | I/O Blocks: 14
+[556s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6206 MH/s | I/O Rate: 51.5622 MB/s | I/O Blocks: 14
+[558s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 51.3774 MB/s | I/O Blocks: 14
+[560s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 51.1940 MB/s | I/O Blocks: 14
+[562s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5819 MH/s | I/O Rate: 51.0118 MB/s | I/O Blocks: 14
+[564s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 50.8309 MB/s | I/O Blocks: 14
+[566s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5566 MH/s | I/O Rate: 50.6513 MB/s | I/O Blocks: 14
+[568s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5441 MH/s | I/O Rate: 50.4730 MB/s | I/O Blocks: 14
+[570s] Progress: 46.9% | Round: 15/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 50.2959 MB/s | I/O Blocks: 14
+[Round 15] Sorting completed: 28.7444s
+[Round 15] Queueing for I/O...
+[Round 16/32] Generating 134217728 hashes...
+[572s] Progress: 46.9% | Round: 16/32 | Hash Rate: 3.5221 MH/s | I/O Rate: 50.1200 MB/s | I/O Blocks: 14
+[574s] Progress: 47.7% | Round: 16/32 | Hash Rate: 3.5707 MH/s | I/O Rate: 53.5129 MB/s | I/O Blocks: 15
+[576s] Progress: 48.5% | Round: 16/32 | Hash Rate: 3.6186 MH/s | I/O Rate: 53.3271 MB/s | I/O Blocks: 15
+[I/O 0] Synced 30.0000 GB
+[578s] Progress: 49.3% | Round: 16/32 | Hash Rate: 3.6662 MH/s | I/O Rate: 53.1426 MB/s | I/O Blocks: 15
+[Round 16] Hash generation: 8.9969s (14.9182 MH/s)
+[Round 16] Sorting 134217728 records...
+[580s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.7021 MH/s | I/O Rate: 52.9593 MB/s | I/O Blocks: 15
+[582s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6894 MH/s | I/O Rate: 52.7774 MB/s | I/O Blocks: 15
+[584s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6768 MH/s | I/O Rate: 52.5966 MB/s | I/O Blocks: 15
+[586s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6642 MH/s | I/O Rate: 52.4171 MB/s | I/O Blocks: 15
+[588s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6518 MH/s | I/O Rate: 52.2388 MB/s | I/O Blocks: 15
+[590s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6394 MH/s | I/O Rate: 52.0617 MB/s | I/O Blocks: 15
+[592s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 51.8858 MB/s | I/O Blocks: 15
+[594s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6149 MH/s | I/O Rate: 51.7112 MB/s | I/O Blocks: 15
+[596s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.6027 MH/s | I/O Rate: 51.5376 MB/s | I/O Blocks: 15
+[598s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5907 MH/s | I/O Rate: 51.3653 MB/s | I/O Blocks: 15
+[600s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 51.1940 MB/s | I/O Blocks: 15
+[602s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5668 MH/s | I/O Rate: 51.0240 MB/s | I/O Blocks: 15
+[604s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5550 MH/s | I/O Rate: 50.8550 MB/s | I/O Blocks: 15
+[606s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5433 MH/s | I/O Rate: 50.6872 MB/s | I/O Blocks: 15
+[608s] Progress: 50.0% | Round: 16/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 50.5204 MB/s | I/O Blocks: 15
+[Round 16] Sorting completed: 28.7678s
+[Round 16] Queueing for I/O...
+[Round 17/32] Generating 134217728 hashes...
+[610s] Progress: 50.1% | Round: 17/32 | Hash Rate: 3.5301 MH/s | I/O Rate: 50.3548 MB/s | I/O Blocks: 15
+[612s] Progress: 50.9% | Round: 17/32 | Hash Rate: 3.5751 MH/s | I/O Rate: 53.5363 MB/s | I/O Blocks: 16
+[614s] Progress: 51.8% | Round: 17/32 | Hash Rate: 3.6198 MH/s | I/O Rate: 53.3619 MB/s | I/O Blocks: 16
+[I/O 0] Synced 32.0000 GB
+[616s] Progress: 52.6% | Round: 17/32 | Hash Rate: 3.6642 MH/s | I/O Rate: 53.1887 MB/s | I/O Blocks: 16
+[Round 17] Hash generation: 9.0173s (14.8844 MH/s)
+[Round 17] Sorting 134217728 records...
+[618s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6916 MH/s | I/O Rate: 53.0165 MB/s | I/O Blocks: 16
+[620s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6797 MH/s | I/O Rate: 52.8455 MB/s | I/O Blocks: 16
+[622s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6679 MH/s | I/O Rate: 52.6756 MB/s | I/O Blocks: 16
+[624s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6562 MH/s | I/O Rate: 52.5068 MB/s | I/O Blocks: 16
+[626s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6445 MH/s | I/O Rate: 52.3390 MB/s | I/O Blocks: 16
+[628s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6329 MH/s | I/O Rate: 52.1723 MB/s | I/O Blocks: 16
+[630s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6213 MH/s | I/O Rate: 52.0067 MB/s | I/O Blocks: 16
+[632s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.6099 MH/s | I/O Rate: 51.8421 MB/s | I/O Blocks: 16
+[634s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5985 MH/s | I/O Rate: 51.6786 MB/s | I/O Blocks: 16
+[636s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5872 MH/s | I/O Rate: 51.5161 MB/s | I/O Blocks: 16
+[638s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5759 MH/s | I/O Rate: 51.3546 MB/s | I/O Blocks: 16
+[640s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5647 MH/s | I/O Rate: 51.1941 MB/s | I/O Blocks: 16
+[642s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5536 MH/s | I/O Rate: 51.0347 MB/s | I/O Blocks: 16
+[644s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5426 MH/s | I/O Rate: 50.8762 MB/s | I/O Blocks: 16
+[646s] Progress: 53.1% | Round: 17/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 50.7187 MB/s | I/O Blocks: 16
+[Round 17] Sorting completed: 29.1484s
+[Round 17] Queueing for I/O...
+[Round 18/32] Generating 134217728 hashes...
+[648s] Progress: 53.2% | Round: 18/32 | Hash Rate: 3.5259 MH/s | I/O Rate: 50.5621 MB/s | I/O Blocks: 16
+[650s] Progress: 54.0% | Round: 18/32 | Hash Rate: 3.5682 MH/s | I/O Rate: 53.5570 MB/s | I/O Blocks: 17
+[652s] Progress: 54.8% | Round: 18/32 | Hash Rate: 3.6105 MH/s | I/O Rate: 53.3927 MB/s | I/O Blocks: 17
+[I/O 0] Synced 34.0000 GB
+[654s] Progress: 55.6% | Round: 18/32 | Hash Rate: 3.6526 MH/s | I/O Rate: 53.2294 MB/s | I/O Blocks: 17
+[Round 18] Hash generation: 9.0009s (14.9116 MH/s)
+[Round 18] Sorting 134217728 records...
+[656s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6824 MH/s | I/O Rate: 53.0671 MB/s | I/O Blocks: 17
+[658s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6712 MH/s | I/O Rate: 52.9058 MB/s | I/O Blocks: 17
+[660s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6601 MH/s | I/O Rate: 52.7455 MB/s | I/O Blocks: 17
+[662s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6490 MH/s | I/O Rate: 52.5862 MB/s | I/O Blocks: 17
+[664s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6380 MH/s | I/O Rate: 52.4278 MB/s | I/O Blocks: 17
+[666s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 52.2704 MB/s | I/O Blocks: 17
+[668s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6162 MH/s | I/O Rate: 52.1139 MB/s | I/O Blocks: 17
+[670s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.6054 MH/s | I/O Rate: 51.9583 MB/s | I/O Blocks: 17
+[672s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 51.8037 MB/s | I/O Blocks: 17
+[674s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5840 MH/s | I/O Rate: 51.6499 MB/s | I/O Blocks: 17
+[676s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5734 MH/s | I/O Rate: 51.4971 MB/s | I/O Blocks: 17
+[678s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5629 MH/s | I/O Rate: 51.3452 MB/s | I/O Blocks: 17
+[680s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5524 MH/s | I/O Rate: 51.1942 MB/s | I/O Blocks: 17
+[682s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5420 MH/s | I/O Rate: 51.0441 MB/s | I/O Blocks: 17
+[684s] Progress: 56.2% | Round: 18/32 | Hash Rate: 3.5316 MH/s | I/O Rate: 50.8948 MB/s | I/O Blocks: 17
+[Round 18] Sorting completed: 28.5200s
+[Round 18] Queueing for I/O...
+[Round 19/32] Generating 134217728 hashes...
+[686s] Progress: 56.5% | Round: 19/32 | Hash Rate: 3.5385 MH/s | I/O Rate: 53.7315 MB/s | I/O Blocks: 18
+[688s] Progress: 57.3% | Round: 19/32 | Hash Rate: 3.5788 MH/s | I/O Rate: 53.5754 MB/s | I/O Blocks: 18
+[690s] Progress: 58.1% | Round: 19/32 | Hash Rate: 3.6192 MH/s | I/O Rate: 53.4201 MB/s | I/O Blocks: 18
+[I/O 0] Synced 36.0000 GB
+[692s] Progress: 59.0% | Round: 19/32 | Hash Rate: 3.6592 MH/s | I/O Rate: 53.2657 MB/s | I/O Blocks: 18
+[Round 19] Hash generation: 8.9239s (15.0403 MH/s)
+[Round 19] Sorting 134217728 records...
+[694s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6741 MH/s | I/O Rate: 53.1122 MB/s | I/O Blocks: 18
+[696s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6636 MH/s | I/O Rate: 52.9596 MB/s | I/O Blocks: 18
+[698s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6531 MH/s | I/O Rate: 52.8078 MB/s | I/O Blocks: 18
+[700s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6426 MH/s | I/O Rate: 52.6569 MB/s | I/O Blocks: 18
+[702s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6323 MH/s | I/O Rate: 52.5069 MB/s | I/O Blocks: 18
+[704s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6219 MH/s | I/O Rate: 52.3578 MB/s | I/O Blocks: 18
+[706s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6117 MH/s | I/O Rate: 52.2094 MB/s | I/O Blocks: 18
+[708s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.6015 MH/s | I/O Rate: 52.0620 MB/s | I/O Blocks: 18
+[710s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5913 MH/s | I/O Rate: 51.9153 MB/s | I/O Blocks: 18
+[712s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5813 MH/s | I/O Rate: 51.7695 MB/s | I/O Blocks: 18
+[714s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5712 MH/s | I/O Rate: 51.6245 MB/s | I/O Blocks: 18
+[716s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5612 MH/s | I/O Rate: 51.4803 MB/s | I/O Blocks: 18
+[718s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5513 MH/s | I/O Rate: 51.3369 MB/s | I/O Blocks: 18
+[720s] Progress: 59.4% | Round: 19/32 | Hash Rate: 3.5415 MH/s | I/O Rate: 51.1943 MB/s | I/O Blocks: 18
+[Round 19] Sorting completed: 28.6659s
+[Round 19] Queueing for I/O...
+[Round 20/32] Generating 134217728 hashes...
+[722s] Progress: 59.4% | Round: 20/32 | Hash Rate: 3.5317 MH/s | I/O Rate: 51.0525 MB/s | I/O Blocks: 18
+[724s] Progress: 59.8% | Round: 20/32 | Hash Rate: 3.5484 MH/s | I/O Rate: 53.7398 MB/s | I/O Blocks: 19
+[726s] Progress: 60.6% | Round: 20/32 | Hash Rate: 3.5867 MH/s | I/O Rate: 53.5918 MB/s | I/O Blocks: 19
+[I/O 0] Synced 38.0000 GB
+[728s] Progress: 61.4% | Round: 20/32 | Hash Rate: 3.6248 MH/s | I/O Rate: 53.4446 MB/s | I/O Blocks: 19
+[730s] Progress: 62.3% | Round: 20/32 | Hash Rate: 3.6627 MH/s | I/O Rate: 53.2982 MB/s | I/O Blocks: 19
+[Round 20] Hash generation: 8.9013s (15.0784 MH/s)
+[Round 20] Sorting 134217728 records...
+[732s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6667 MH/s | I/O Rate: 53.1526 MB/s | I/O Blocks: 19
+[734s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6568 MH/s | I/O Rate: 53.0077 MB/s | I/O Blocks: 19
+[736s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6468 MH/s | I/O Rate: 52.8637 MB/s | I/O Blocks: 19
+[738s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6369 MH/s | I/O Rate: 52.7204 MB/s | I/O Blocks: 19
+[740s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 52.5779 MB/s | I/O Blocks: 19
+[742s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6173 MH/s | I/O Rate: 52.4362 MB/s | I/O Blocks: 19
+[744s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 52.2953 MB/s | I/O Blocks: 19
+[746s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5979 MH/s | I/O Rate: 52.1551 MB/s | I/O Blocks: 19
+[748s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5883 MH/s | I/O Rate: 52.0156 MB/s | I/O Blocks: 19
+[750s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 51.8769 MB/s | I/O Blocks: 19
+[752s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 51.7389 MB/s | I/O Blocks: 19
+[754s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5598 MH/s | I/O Rate: 51.6017 MB/s | I/O Blocks: 19
+[756s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5503 MH/s | I/O Rate: 51.4652 MB/s | I/O Blocks: 19
+[758s] Progress: 62.5% | Round: 20/32 | Hash Rate: 3.5410 MH/s | I/O Rate: 51.3294 MB/s | I/O Blocks: 19
+[Round 20] Sorting completed: 28.3363s
+[Round 20] Queueing for I/O...
+[Round 21/32] Generating 134217728 hashes...
+[I/O 0] Writing block 20 (2048.0000 MB)
+[760s] Progress: 62.5% | Round: 21/32 | Hash Rate: 3.5317 MH/s | I/O Rate: 51.1943 MB/s | I/O Blocks: 19
+[762s] Progress: 63.3% | Round: 21/32 | Hash Rate: 3.5649 MH/s | I/O Rate: 53.7473 MB/s | I/O Blocks: 20
+[764s] Progress: 64.1% | Round: 21/32 | Hash Rate: 3.6012 MH/s | I/O Rate: 53.6066 MB/s | I/O Blocks: 20
+[I/O 0] Synced 40.0000 GB
+[766s] Progress: 64.9% | Round: 21/32 | Hash Rate: 3.6373 MH/s | I/O Rate: 53.4667 MB/s | I/O Blocks: 20
+[Round 21] Hash generation: 8.9226s (15.0425 MH/s)
+[Round 21] Sorting 134217728 records...
+[768s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6696 MH/s | I/O Rate: 53.3274 MB/s | I/O Blocks: 20
+[770s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6601 MH/s | I/O Rate: 53.1889 MB/s | I/O Blocks: 20
+[772s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6506 MH/s | I/O Rate: 53.0511 MB/s | I/O Blocks: 20
+[774s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6412 MH/s | I/O Rate: 52.9140 MB/s | I/O Blocks: 20
+[776s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6318 MH/s | I/O Rate: 52.7777 MB/s | I/O Blocks: 20
+[778s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6224 MH/s | I/O Rate: 52.6420 MB/s | I/O Blocks: 20
+[780s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6132 MH/s | I/O Rate: 52.5070 MB/s | I/O Blocks: 20
+[782s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.6039 MH/s | I/O Rate: 52.3727 MB/s | I/O Blocks: 20
+[784s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 52.2391 MB/s | I/O Blocks: 20
+[786s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5856 MH/s | I/O Rate: 52.1062 MB/s | I/O Blocks: 20
+[788s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5765 MH/s | I/O Rate: 51.9740 MB/s | I/O Blocks: 20
+[790s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5674 MH/s | I/O Rate: 51.8424 MB/s | I/O Blocks: 20
+[792s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5584 MH/s | I/O Rate: 51.7115 MB/s | I/O Blocks: 20
+[794s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5494 MH/s | I/O Rate: 51.5812 MB/s | I/O Blocks: 20
+[796s] Progress: 65.6% | Round: 21/32 | Hash Rate: 3.5405 MH/s | I/O Rate: 51.4516 MB/s | I/O Blocks: 20
+[Round 21] Sorting completed: 29.0226s
+[Round 21] Queueing for I/O...
+[Round 22/32] Generating 134217728 hashes...
+[798s] Progress: 65.6% | Round: 22/32 | Hash Rate: 3.5317 MH/s | I/O Rate: 51.3227 MB/s | I/O Blocks: 20
+[800s] Progress: 66.4% | Round: 22/32 | Hash Rate: 3.5648 MH/s | I/O Rate: 53.7541 MB/s | I/O Blocks: 21
+[802s] Progress: 67.2% | Round: 22/32 | Hash Rate: 3.5995 MH/s | I/O Rate: 53.6200 MB/s | I/O Blocks: 21
+[I/O 0] Synced 42.0000 GB
+[804s] Progress: 68.0% | Round: 22/32 | Hash Rate: 3.6340 MH/s | I/O Rate: 53.4867 MB/s | I/O Blocks: 21
+[Round 22] Hash generation: 8.8951s (15.0889 MH/s)
+[Round 22] Sorting 134217728 records...
+[806s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6631 MH/s | I/O Rate: 53.3539 MB/s | I/O Blocks: 21
+[808s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6540 MH/s | I/O Rate: 53.2219 MB/s | I/O Blocks: 21
+[810s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6450 MH/s | I/O Rate: 53.0905 MB/s | I/O Blocks: 21
+[812s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6360 MH/s | I/O Rate: 52.9597 MB/s | I/O Blocks: 21
+[814s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 52.8296 MB/s | I/O Blocks: 21
+[816s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6182 MH/s | I/O Rate: 52.7001 MB/s | I/O Blocks: 21
+[818s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6094 MH/s | I/O Rate: 52.5712 MB/s | I/O Blocks: 21
+[820s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.6006 MH/s | I/O Rate: 52.4430 MB/s | I/O Blocks: 21
+[822s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5918 MH/s | I/O Rate: 52.3154 MB/s | I/O Blocks: 21
+[824s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5831 MH/s | I/O Rate: 52.1884 MB/s | I/O Blocks: 21
+[826s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5744 MH/s | I/O Rate: 52.0621 MB/s | I/O Blocks: 21
+[828s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5658 MH/s | I/O Rate: 51.9363 MB/s | I/O Blocks: 21
+[830s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5572 MH/s | I/O Rate: 51.8112 MB/s | I/O Blocks: 21
+[832s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5486 MH/s | I/O Rate: 51.6866 MB/s | I/O Blocks: 21
+[834s] Progress: 68.8% | Round: 22/32 | Hash Rate: 3.5401 MH/s | I/O Rate: 51.5627 MB/s | I/O Blocks: 21
+[Round 22] Sorting completed: 28.7347s
+[Round 22] Queueing for I/O...
+[Round 23/32] Generating 134217728 hashes...
+[836s] Progress: 68.9% | Round: 23/32 | Hash Rate: 3.5378 MH/s | I/O Rate: 51.4393 MB/s | I/O Blocks: 21
+[838s] Progress: 69.7% | Round: 23/32 | Hash Rate: 3.5711 MH/s | I/O Rate: 53.7602 MB/s | I/O Blocks: 22
+[840s] Progress: 70.5% | Round: 23/32 | Hash Rate: 3.6043 MH/s | I/O Rate: 53.6322 MB/s | I/O Blocks: 22
+[I/O 0] Synced 44.0000 GB
+[842s] Progress: 71.3% | Round: 23/32 | Hash Rate: 3.6373 MH/s | I/O Rate: 53.5048 MB/s | I/O Blocks: 22
+[Round 23] Hash generation: 8.8859s (15.1045 MH/s)
+[Round 23] Sorting 134217728 records...
+[844s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6572 MH/s | I/O Rate: 53.3781 MB/s | I/O Blocks: 22
+[846s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6485 MH/s | I/O Rate: 53.2519 MB/s | I/O Blocks: 22
+[848s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6399 MH/s | I/O Rate: 53.1263 MB/s | I/O Blocks: 22
+[850s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6314 MH/s | I/O Rate: 53.0013 MB/s | I/O Blocks: 22
+[852s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6229 MH/s | I/O Rate: 52.8768 MB/s | I/O Blocks: 22
+[854s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6144 MH/s | I/O Rate: 52.7530 MB/s | I/O Blocks: 22
+[856s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.6059 MH/s | I/O Rate: 52.6298 MB/s | I/O Blocks: 22
+[858s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5975 MH/s | I/O Rate: 52.5071 MB/s | I/O Blocks: 22
+[860s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5892 MH/s | I/O Rate: 52.3850 MB/s | I/O Blocks: 22
+[862s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5808 MH/s | I/O Rate: 52.2634 MB/s | I/O Blocks: 22
+[864s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5725 MH/s | I/O Rate: 52.1425 MB/s | I/O Blocks: 22
+[866s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5643 MH/s | I/O Rate: 52.0220 MB/s | I/O Blocks: 22
+[868s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5561 MH/s | I/O Rate: 51.9022 MB/s | I/O Blocks: 22
+[870s] Progress: 71.9% | Round: 23/32 | Hash Rate: 3.5479 MH/s | I/O Rate: 51.7828 MB/s | I/O Blocks: 22
+[Round 23] Sorting completed: 28.6047s
+[Round 23] Queueing for I/O...
+[Round 24/32] Generating 134217728 hashes...
+[872s] Progress: 71.9% | Round: 24/32 | Hash Rate: 3.5398 MH/s | I/O Rate: 51.6641 MB/s | I/O Blocks: 22
+[874s] Progress: 72.2% | Round: 24/32 | Hash Rate: 3.5478 MH/s | I/O Rate: 53.8889 MB/s | I/O Blocks: 23
+[876s] Progress: 73.0% | Round: 24/32 | Hash Rate: 3.5796 MH/s | I/O Rate: 53.7658 MB/s | I/O Blocks: 23
+[878s] Progress: 73.8% | Round: 24/32 | Hash Rate: 3.6114 MH/s | I/O Rate: 53.6434 MB/s | I/O Blocks: 23
+[I/O 0] Synced 46.0000 GB
+[880s] Progress: 74.6% | Round: 24/32 | Hash Rate: 3.6430 MH/s | I/O Rate: 53.5214 MB/s | I/O Blocks: 23
+[Round 24] Hash generation: 8.8835s (15.1087 MH/s)
+[Round 24] Sorting 134217728 records...
+[882s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6518 MH/s | I/O Rate: 53.4001 MB/s | I/O Blocks: 23
+[884s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6435 MH/s | I/O Rate: 53.2793 MB/s | I/O Blocks: 23
+[886s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6353 MH/s | I/O Rate: 53.1590 MB/s | I/O Blocks: 23
+[888s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 53.0393 MB/s | I/O Blocks: 23
+[890s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6190 MH/s | I/O Rate: 52.9201 MB/s | I/O Blocks: 23
+[892s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6108 MH/s | I/O Rate: 52.8014 MB/s | I/O Blocks: 23
+[894s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.6028 MH/s | I/O Rate: 52.6833 MB/s | I/O Blocks: 23
+[896s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 52.5657 MB/s | I/O Blocks: 23
+[898s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5867 MH/s | I/O Rate: 52.4486 MB/s | I/O Blocks: 23
+[900s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 52.3320 MB/s | I/O Blocks: 23
+[902s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5708 MH/s | I/O Rate: 52.2160 MB/s | I/O Blocks: 23
+[904s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5629 MH/s | I/O Rate: 52.1005 MB/s | I/O Blocks: 23
+[906s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5550 MH/s | I/O Rate: 51.9855 MB/s | I/O Blocks: 23
+[908s] Progress: 75.0% | Round: 24/32 | Hash Rate: 3.5472 MH/s | I/O Rate: 51.8709 MB/s | I/O Blocks: 23
+[Round 24] Sorting completed: 28.6473s
+[Round 24] Queueing for I/O...
+[Round 25/32] Generating 134217728 hashes...
+[910s] Progress: 75.0% | Round: 25/32 | Hash Rate: 3.5394 MH/s | I/O Rate: 51.7569 MB/s | I/O Blocks: 23
+[912s] Progress: 75.5% | Round: 25/32 | Hash Rate: 3.5562 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 24
+[914s] Progress: 76.3% | Round: 25/32 | Hash Rate: 3.5868 MH/s | I/O Rate: 53.7709 MB/s | I/O Blocks: 24
+[916s] Progress: 77.2% | Round: 25/32 | Hash Rate: 3.6172 MH/s | I/O Rate: 53.6535 MB/s | I/O Blocks: 24
+[I/O 0] Synced 48.0000 GB
+[918s] Progress: 78.0% | Round: 25/32 | Hash Rate: 3.6475 MH/s | I/O Rate: 53.5366 MB/s | I/O Blocks: 24
+[Round 25] Hash generation: 8.8838s (15.1082 MH/s)
+[Round 25] Sorting 134217728 records...
+[920s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6468 MH/s | I/O Rate: 53.4202 MB/s | I/O Blocks: 24
+[922s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6389 MH/s | I/O Rate: 53.3043 MB/s | I/O Blocks: 24
+[924s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6310 MH/s | I/O Rate: 53.1889 MB/s | I/O Blocks: 24
+[926s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6232 MH/s | I/O Rate: 53.0741 MB/s | I/O Blocks: 24
+[928s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6154 MH/s | I/O Rate: 52.9597 MB/s | I/O Blocks: 24
+[930s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 52.8458 MB/s | I/O Blocks: 24
+[932s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5999 MH/s | I/O Rate: 52.7324 MB/s | I/O Blocks: 24
+[934s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5922 MH/s | I/O Rate: 52.6194 MB/s | I/O Blocks: 24
+[936s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5845 MH/s | I/O Rate: 52.5070 MB/s | I/O Blocks: 24
+[938s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5768 MH/s | I/O Rate: 52.3950 MB/s | I/O Blocks: 24
+[940s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 52.2836 MB/s | I/O Blocks: 24
+[942s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5616 MH/s | I/O Rate: 52.1726 MB/s | I/O Blocks: 24
+[944s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5541 MH/s | I/O Rate: 52.0620 MB/s | I/O Blocks: 24
+[946s] Progress: 78.1% | Round: 25/32 | Hash Rate: 3.5466 MH/s | I/O Rate: 51.9519 MB/s | I/O Blocks: 24
+[Round 25] Sorting completed: 28.9077s
+[Round 25] Queueing for I/O...
+[Round 26/32] Generating 134217728 hashes...
+[948s] Progress: 78.1% | Round: 26/32 | Hash Rate: 3.5391 MH/s | I/O Rate: 51.8423 MB/s | I/O Blocks: 24
+[950s] Progress: 78.7% | Round: 26/32 | Hash Rate: 3.5591 MH/s | I/O Rate: 53.8887 MB/s | I/O Blocks: 25
+[952s] Progress: 79.5% | Round: 26/32 | Hash Rate: 3.5882 MH/s | I/O Rate: 53.7755 MB/s | I/O Blocks: 25
+[I/O 0] Synced 50.0000 GB
+[954s] Progress: 80.4% | Round: 26/32 | Hash Rate: 3.6173 MH/s | I/O Rate: 53.6628 MB/s | I/O Blocks: 25
+[956s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6463 MH/s | I/O Rate: 53.5505 MB/s | I/O Blocks: 25
+[Round 26] Hash generation: 8.9094s (15.0647 MH/s)
+[Round 26] Sorting 134217728 records...
+[958s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6422 MH/s | I/O Rate: 53.4387 MB/s | I/O Blocks: 25
+[960s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6347 MH/s | I/O Rate: 53.3274 MB/s | I/O Blocks: 25
+[962s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 53.2165 MB/s | I/O Blocks: 25
+[964s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6196 MH/s | I/O Rate: 53.1061 MB/s | I/O Blocks: 25
+[966s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6121 MH/s | I/O Rate: 52.9962 MB/s | I/O Blocks: 25
+[968s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.6046 MH/s | I/O Rate: 52.8867 MB/s | I/O Blocks: 25
+[970s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5972 MH/s | I/O Rate: 52.7777 MB/s | I/O Blocks: 25
+[972s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5898 MH/s | I/O Rate: 52.6691 MB/s | I/O Blocks: 25
+[974s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5824 MH/s | I/O Rate: 52.5609 MB/s | I/O Blocks: 25
+[976s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5751 MH/s | I/O Rate: 52.4532 MB/s | I/O Blocks: 25
+[978s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5678 MH/s | I/O Rate: 52.3459 MB/s | I/O Blocks: 25
+[980s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5605 MH/s | I/O Rate: 52.2391 MB/s | I/O Blocks: 25
+[982s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5532 MH/s | I/O Rate: 52.1327 MB/s | I/O Blocks: 25
+[984s] Progress: 81.2% | Round: 26/32 | Hash Rate: 3.5460 MH/s | I/O Rate: 52.0268 MB/s | I/O Blocks: 25
+[Round 26] Sorting completed: 28.4416s
+[Round 26] Queueing for I/O...
+[Round 27/32] Generating 134217728 hashes...
+[986s] Progress: 81.3% | Round: 27/32 | Hash Rate: 3.5414 MH/s | I/O Rate: 51.9212 MB/s | I/O Blocks: 25
+[988s] Progress: 82.1% | Round: 27/32 | Hash Rate: 3.5696 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 26
+[990s] Progress: 82.9% | Round: 27/32 | Hash Rate: 3.5977 MH/s | I/O Rate: 53.7799 MB/s | I/O Blocks: 26
+[I/O 0] Synced 52.0000 GB
+[992s] Progress: 83.8% | Round: 27/32 | Hash Rate: 3.6257 MH/s | I/O Rate: 53.6715 MB/s | I/O Blocks: 26
+[Round 27] Hash generation: 8.8920s (15.0943 MH/s)
+[Round 27] Sorting 134217728 records...
+[994s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6454 MH/s | I/O Rate: 53.5635 MB/s | I/O Blocks: 26
+[996s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6380 MH/s | I/O Rate: 53.4559 MB/s | I/O Blocks: 26
+[998s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6307 MH/s | I/O Rate: 53.3488 MB/s | I/O Blocks: 26
+[1000s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6235 MH/s | I/O Rate: 53.2421 MB/s | I/O Blocks: 26
+[1002s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6162 MH/s | I/O Rate: 53.1358 MB/s | I/O Blocks: 26
+[1004s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6090 MH/s | I/O Rate: 53.0300 MB/s | I/O Blocks: 26
+[1006s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.6019 MH/s | I/O Rate: 52.9246 MB/s | I/O Blocks: 26
+[1008s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 52.8196 MB/s | I/O Blocks: 26
+[1010s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5876 MH/s | I/O Rate: 52.7150 MB/s | I/O Blocks: 26
+[1012s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5805 MH/s | I/O Rate: 52.6108 MB/s | I/O Blocks: 26
+[1014s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5734 MH/s | I/O Rate: 52.5070 MB/s | I/O Blocks: 26
+[1016s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5664 MH/s | I/O Rate: 52.4037 MB/s | I/O Blocks: 26
+[1018s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5594 MH/s | I/O Rate: 52.3007 MB/s | I/O Blocks: 26
+[1020s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5524 MH/s | I/O Rate: 52.1982 MB/s | I/O Blocks: 26
+[1022s] Progress: 84.4% | Round: 27/32 | Hash Rate: 3.5455 MH/s | I/O Rate: 52.0960 MB/s | I/O Blocks: 26
+[Round 27] Sorting completed: 28.5462s
+[Round 27] Queueing for I/O...
+[Round 28/32] Generating 134217728 hashes...
+[1024s] Progress: 84.7% | Round: 28/32 | Hash Rate: 3.5507 MH/s | I/O Rate: 53.9940 MB/s | I/O Blocks: 27
+[1026s] Progress: 85.5% | Round: 28/32 | Hash Rate: 3.5779 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 27
+[1028s] Progress: 86.3% | Round: 28/32 | Hash Rate: 3.6050 MH/s | I/O Rate: 53.7840 MB/s | I/O Blocks: 27
+[I/O 0] Synced 54.0000 GB
+[1030s] Progress: 87.1% | Round: 28/32 | Hash Rate: 3.6320 MH/s | I/O Rate: 53.6795 MB/s | I/O Blocks: 27
+[Round 28] Hash generation: 8.8904s (15.0970 MH/s)
+[Round 28] Sorting 134217728 records...
+[1032s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6412 MH/s | I/O Rate: 53.5755 MB/s | I/O Blocks: 27
+[1034s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6341 MH/s | I/O Rate: 53.4719 MB/s | I/O Blocks: 27
+[1036s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 53.3686 MB/s | I/O Blocks: 27
+[1038s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6201 MH/s | I/O Rate: 53.2658 MB/s | I/O Blocks: 27
+[1040s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6132 MH/s | I/O Rate: 53.1634 MB/s | I/O Blocks: 27
+[1042s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.6062 MH/s | I/O Rate: 53.0613 MB/s | I/O Blocks: 27
+[1044s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5993 MH/s | I/O Rate: 52.9597 MB/s | I/O Blocks: 27
+[1046s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5924 MH/s | I/O Rate: 52.8584 MB/s | I/O Blocks: 27
+[1048s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5856 MH/s | I/O Rate: 52.7575 MB/s | I/O Blocks: 27
+[1050s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 52.6570 MB/s | I/O Blocks: 27
+[1052s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5719 MH/s | I/O Rate: 52.5569 MB/s | I/O Blocks: 27
+[1054s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5652 MH/s | I/O Rate: 52.4572 MB/s | I/O Blocks: 27
+[1056s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5584 MH/s | I/O Rate: 52.3578 MB/s | I/O Blocks: 27
+[1058s] Progress: 87.5% | Round: 28/32 | Hash Rate: 3.5517 MH/s | I/O Rate: 52.2589 MB/s | I/O Blocks: 27
+[Round 28] Sorting completed: 28.7260s
+[Round 28] Queueing for I/O...
+[Round 29/32] Generating 134217728 hashes...
+[1060s] Progress: 87.5% | Round: 29/32 | Hash Rate: 3.5450 MH/s | I/O Rate: 52.1603 MB/s | I/O Blocks: 27
+[1062s] Progress: 87.9% | Round: 29/32 | Hash Rate: 3.5564 MH/s | I/O Rate: 53.9903 MB/s | I/O Blocks: 28
+[1064s] Progress: 88.8% | Round: 29/32 | Hash Rate: 3.5825 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 28
+[1066s] Progress: 89.6% | Round: 29/32 | Hash Rate: 3.6085 MH/s | I/O Rate: 53.7877 MB/s | I/O Blocks: 28
+[I/O 0] Synced 56.0000 GB
+[1068s] Progress: 90.4% | Round: 29/32 | Hash Rate: 3.6345 MH/s | I/O Rate: 53.6870 MB/s | I/O Blocks: 28
+[Round 29] Hash generation: 8.9083s (15.0666 MH/s)
+[Round 29] Sorting 134217728 records...
+[1070s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6373 MH/s | I/O Rate: 53.5866 MB/s | I/O Blocks: 28
+[1072s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6305 MH/s | I/O Rate: 53.4866 MB/s | I/O Blocks: 28
+[1074s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6237 MH/s | I/O Rate: 53.3870 MB/s | I/O Blocks: 28
+[1076s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6170 MH/s | I/O Rate: 53.2878 MB/s | I/O Blocks: 28
+[1078s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6103 MH/s | I/O Rate: 53.1889 MB/s | I/O Blocks: 28
+[1080s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.6036 MH/s | I/O Rate: 53.0904 MB/s | I/O Blocks: 28
+[1082s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5969 MH/s | I/O Rate: 52.9923 MB/s | I/O Blocks: 28
+[1084s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5903 MH/s | I/O Rate: 52.8945 MB/s | I/O Blocks: 28
+[1086s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5837 MH/s | I/O Rate: 52.7971 MB/s | I/O Blocks: 28
+[1088s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5771 MH/s | I/O Rate: 52.7001 MB/s | I/O Blocks: 28
+[1090s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5705 MH/s | I/O Rate: 52.6034 MB/s | I/O Blocks: 28
+[1092s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5640 MH/s | I/O Rate: 52.5070 MB/s | I/O Blocks: 28
+[1094s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5575 MH/s | I/O Rate: 52.4110 MB/s | I/O Blocks: 28
+[1096s] Progress: 90.6% | Round: 29/32 | Hash Rate: 3.5510 MH/s | I/O Rate: 52.3154 MB/s | I/O Blocks: 28
+[Round 29] Sorting completed: 28.6692s
+[Round 29] Queueing for I/O...
+[Round 30/32] Generating 134217728 hashes...
+[1098s] Progress: 90.6% | Round: 30/32 | Hash Rate: 3.5445 MH/s | I/O Rate: 52.2201 MB/s | I/O Blocks: 28
+[1100s] Progress: 91.2% | Round: 30/32 | Hash Rate: 3.5625 MH/s | I/O Rate: 53.9868 MB/s | I/O Blocks: 29
+[1102s] Progress: 92.1% | Round: 30/32 | Hash Rate: 3.5877 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 29
+[I/O 0] Synced 58.0000 GB
+[1104s] Progress: 92.9% | Round: 30/32 | Hash Rate: 3.6129 MH/s | I/O Rate: 53.7912 MB/s | I/O Blocks: 29
+[1106s] Progress: 93.7% | Round: 30/32 | Hash Rate: 3.6382 MH/s | I/O Rate: 53.6939 MB/s | I/O Blocks: 29
+[Round 30] Hash generation: 8.8856s (15.1051 MH/s)
+[Round 30] Sorting 134217728 records...
+[1108s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6337 MH/s | I/O Rate: 53.5970 MB/s | I/O Blocks: 29
+[1110s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 53.5004 MB/s | I/O Blocks: 29
+[1112s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6206 MH/s | I/O Rate: 53.4042 MB/s | I/O Blocks: 29
+[1114s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6141 MH/s | I/O Rate: 53.3083 MB/s | I/O Blocks: 29
+[1116s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6076 MH/s | I/O Rate: 53.2128 MB/s | I/O Blocks: 29
+[1118s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.6012 MH/s | I/O Rate: 53.1176 MB/s | I/O Blocks: 29
+[1120s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5947 MH/s | I/O Rate: 53.0227 MB/s | I/O Blocks: 29
+[1122s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5883 MH/s | I/O Rate: 52.9282 MB/s | I/O Blocks: 29
+[1124s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5819 MH/s | I/O Rate: 52.8341 MB/s | I/O Blocks: 29
+[1126s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5756 MH/s | I/O Rate: 52.7402 MB/s | I/O Blocks: 29
+[1128s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5692 MH/s | I/O Rate: 52.6467 MB/s | I/O Blocks: 29
+[1130s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5629 MH/s | I/O Rate: 52.5535 MB/s | I/O Blocks: 29
+[1132s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5566 MH/s | I/O Rate: 52.4607 MB/s | I/O Blocks: 29
+[1134s] Progress: 93.8% | Round: 30/32 | Hash Rate: 3.5503 MH/s | I/O Rate: 52.3681 MB/s | I/O Blocks: 29
+[Round 30] Sorting completed: 28.4799s
+[Round 30] Queueing for I/O...
+[Round 31/32] Generating 134217728 hashes...
+[I/O 0] Writing block 30 (2048.0000 MB)
+[1136s] Progress: 93.8% | Round: 31/32 | Hash Rate: 3.5466 MH/s | I/O Rate: 52.2759 MB/s | I/O Blocks: 29
+[1138s] Progress: 94.6% | Round: 31/32 | Hash Rate: 3.5711 MH/s | I/O Rate: 53.9835 MB/s | I/O Blocks: 30
+[1140s] Progress: 95.4% | Round: 31/32 | Hash Rate: 3.5955 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 30
+[I/O 0] Synced 60.0000 GB
+[1142s] Progress: 96.3% | Round: 31/32 | Hash Rate: 3.6199 MH/s | I/O Rate: 53.7945 MB/s | I/O Blocks: 30
+[Round 31] Hash generation: 8.8865s (15.1036 MH/s)
+[Round 31] Sorting 134217728 records...
+[1144s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6366 MH/s | I/O Rate: 53.7004 MB/s | I/O Blocks: 30
+[1146s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6303 MH/s | I/O Rate: 53.6067 MB/s | I/O Blocks: 30
+[1148s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6239 MH/s | I/O Rate: 53.5133 MB/s | I/O Blocks: 30
+[1150s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6176 MH/s | I/O Rate: 53.4202 MB/s | I/O Blocks: 30
+[1152s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6114 MH/s | I/O Rate: 53.3275 MB/s | I/O Blocks: 30
+[1154s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.6051 MH/s | I/O Rate: 53.2351 MB/s | I/O Blocks: 30
+[1156s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5989 MH/s | I/O Rate: 53.1430 MB/s | I/O Blocks: 30
+[1158s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5927 MH/s | I/O Rate: 53.0512 MB/s | I/O Blocks: 30
+[1160s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5865 MH/s | I/O Rate: 52.9597 MB/s | I/O Blocks: 30
+[1162s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5803 MH/s | I/O Rate: 52.8686 MB/s | I/O Blocks: 30
+[1164s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5741 MH/s | I/O Rate: 52.7777 MB/s | I/O Blocks: 30
+[1166s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5680 MH/s | I/O Rate: 52.6872 MB/s | I/O Blocks: 30
+[1168s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5619 MH/s | I/O Rate: 52.5970 MB/s | I/O Blocks: 30
+[1170s] Progress: 96.9% | Round: 31/32 | Hash Rate: 3.5558 MH/s | I/O Rate: 52.5071 MB/s | I/O Blocks: 30
+[Round 31] Sorting completed: 28.3129s
+[Round 31] Queueing for I/O...
+[Round 32/32] Generating 134217728 hashes...
+[1172s] Progress: 96.9% | Round: 32/32 | Hash Rate: 3.5497 MH/s | I/O Rate: 52.4175 MB/s | I/O Blocks: 30
+[1174s] Progress: 97.3% | Round: 32/32 | Hash Rate: 3.5581 MH/s | I/O Rate: 54.0724 MB/s | I/O Blocks: 31
+[1176s] Progress: 98.1% | Round: 32/32 | Hash Rate: 3.5818 MH/s | I/O Rate: 53.9805 MB/s | I/O Blocks: 31
+[1178s] Progress: 98.9% | Round: 32/32 | Hash Rate: 3.6055 MH/s | I/O Rate: 53.8888 MB/s | I/O Blocks: 31
+[I/O 0] Synced 62.0000 GB
+[1180s] Progress: 99.7% | Round: 32/32 | Hash Rate: 3.6291 MH/s | I/O Rate: 53.7975 MB/s | I/O Blocks: 31
+[Round 32] Hash generation: 8.8872s (15.1023 MH/s)
+[Round 32] Sorting 134217728 records...
+[1182s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6332 MH/s | I/O Rate: 53.7065 MB/s | I/O Blocks: 31
+[1184s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6271 MH/s | I/O Rate: 53.6158 MB/s | I/O Blocks: 31
+[1186s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6210 MH/s | I/O Rate: 53.5254 MB/s | I/O Blocks: 31
+[1188s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6149 MH/s | I/O Rate: 53.4352 MB/s | I/O Blocks: 31
+[1190s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6088 MH/s | I/O Rate: 53.3454 MB/s | I/O Blocks: 31
+[1192s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.6028 MH/s | I/O Rate: 53.2559 MB/s | I/O Blocks: 31
+[1194s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5967 MH/s | I/O Rate: 53.1667 MB/s | I/O Blocks: 31
+[1196s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5907 MH/s | I/O Rate: 53.0778 MB/s | I/O Blocks: 31
+[1198s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5847 MH/s | I/O Rate: 52.9892 MB/s | I/O Blocks: 31
+[1200s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5787 MH/s | I/O Rate: 52.9009 MB/s | I/O Blocks: 31
+[1202s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5728 MH/s | I/O Rate: 52.8129 MB/s | I/O Blocks: 31
+[1204s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5669 MH/s | I/O Rate: 52.7251 MB/s | I/O Blocks: 31
+[1206s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5609 MH/s | I/O Rate: 52.6377 MB/s | I/O Blocks: 31
+[1208s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5550 MH/s | I/O Rate: 52.5506 MB/s | I/O Blocks: 31
+[Round 32] Sorting completed: 28.4069s
+[Round 32] Queueing for I/O...
 All rounds completed. Shutting down queue...
 Waiting for I/O threads to finish...
-I/O Worker 0: Final sync...
-I/O Worker 0: Exiting
-Starting merge phase...
-Starting merge of 41 runs...
-Loading initial records from 41 runs...
-Starting merge process...
-[1240s] Progress: 100.0% | Hash Rate: 3.46 MH/s | I/O: 66.06 MB/s | Merge: 0.0%
-[1250s] Progress: 100.0% | Hash Rate: 3.44 MH/s | I/O: 65.53 MB/s | Merge: 0.2%
-[1260s] Progress: 100.0% | Hash Rate: 3.41 MH/s | I/O: 65.01 MB/s | Merge: 0.4%
-[1270s] Progress: 100.0% | Hash Rate: 3.38 MH/s | I/O: 64.50 MB/s | Merge: 0.6%
-[1280s] Progress: 100.0% | Hash Rate: 3.36 MH/s | I/O: 64.00 MB/s | Merge: 0.8%
-Merge progress: 1.0% (42949672/4294967296) at 856 K records/sec
-[1290s] Progress: 100.0% | Hash Rate: 3.33 MH/s | I/O: 63.50 MB/s | Merge: 1.0%
-[1300s] Progress: 100.0% | Hash Rate: 3.30 MH/s | I/O: 63.01 MB/s | Merge: 1.2%
-[1310s] Progress: 100.0% | Hash Rate: 3.28 MH/s | I/O: 62.53 MB/s | Merge: 1.4%
-[1320s] Progress: 100.0% | Hash Rate: 3.25 MH/s | I/O: 62.06 MB/s | Merge: 1.6%
-[1330s] Progress: 100.0% | Hash Rate: 3.23 MH/s | I/O: 61.59 MB/s | Merge: 1.8%
-Merge progress: 2.0% (85899344/4294967296) at 854 K records/sec
-[1340s] Progress: 100.0% | Hash Rate: 3.21 MH/s | I/O: 61.13 MB/s | Merge: 2.0%
-[1350s] Progress: 100.0% | Hash Rate: 3.18 MH/s | I/O: 60.68 MB/s | Merge: 2.2%
-[1360s] Progress: 100.0% | Hash Rate: 3.16 MH/s | I/O: 60.23 MB/s | Merge: 2.4%
-[1370s] Progress: 100.0% | Hash Rate: 3.13 MH/s | I/O: 59.79 MB/s | Merge: 2.6%
-[1380s] Progress: 100.0% | Hash Rate: 3.11 MH/s | I/O: 59.36 MB/s | Merge: 2.8%
-[1390s] Progress: 100.0% | Hash Rate: 3.09 MH/s | I/O: 58.93 MB/s | Merge: 3.0%
-Merge progress: 3.0% (128849016/4294967296) at 852 K records/sec
-[1400s] Progress: 100.0% | Hash Rate: 3.07 MH/s | I/O: 58.51 MB/s | Merge: 3.2%
-[1410s] Progress: 100.0% | Hash Rate: 3.05 MH/s | I/O: 58.10 MB/s | Merge: 3.4%
-[1420s] Progress: 100.0% | Hash Rate: 3.02 MH/s | I/O: 57.69 MB/s | Merge: 3.6%
-[1430s] Progress: 100.0% | Hash Rate: 3.00 MH/s | I/O: 57.29 MB/s | Merge: 3.8%
-[1440s] Progress: 100.0% | Hash Rate: 2.98 MH/s | I/O: 56.89 MB/s | Merge: 4.0%
-Merge progress: 4.0% (171798688/4294967296) at 852 K records/sec
-[1450s] Progress: 100.0% | Hash Rate: 2.96 MH/s | I/O: 56.50 MB/s | Merge: 4.2%
-[1460s] Progress: 100.0% | Hash Rate: 2.94 MH/s | I/O: 56.11 MB/s | Merge: 4.4%
-[1470s] Progress: 100.0% | Hash Rate: 2.92 MH/s | I/O: 55.73 MB/s | Merge: 4.6%
-[1480s] Progress: 100.0% | Hash Rate: 2.90 MH/s | I/O: 55.35 MB/s | Merge: 4.8%
-[1490s] Progress: 100.0% | Hash Rate: 2.88 MH/s | I/O: 54.98 MB/s | Merge: 5.0%
-Merge progress: 5.0% (214748360/4294967296) at 853 K records/sec
-[1500s] Progress: 100.0% | Hash Rate: 2.86 MH/s | I/O: 54.61 MB/s | Merge: 5.2%
-[1510s] Progress: 100.0% | Hash Rate: 2.84 MH/s | I/O: 54.25 MB/s | Merge: 5.4%
-[1520s] Progress: 100.0% | Hash Rate: 2.83 MH/s | I/O: 53.89 MB/s | Merge: 5.6%
-[1530s] Progress: 100.0% | Hash Rate: 2.81 MH/s | I/O: 53.54 MB/s | Merge: 5.8%
-[1540s] Progress: 100.0% | Hash Rate: 2.79 MH/s | I/O: 53.19 MB/s | Merge: 6.0%
-Merge progress: 6.0% (257698032/4294967296) at 853 K records/sec
-[1550s] Progress: 100.0% | Hash Rate: 2.77 MH/s | I/O: 52.85 MB/s | Merge: 6.2%
-[1560s] Progress: 100.0% | Hash Rate: 2.75 MH/s | I/O: 52.51 MB/s | Merge: 6.4%
-[1570s] Progress: 100.0% | Hash Rate: 2.74 MH/s | I/O: 52.18 MB/s | Merge: 6.6%
-[1580s] Progress: 100.0% | Hash Rate: 2.72 MH/s | I/O: 51.85 MB/s | Merge: 6.8%
-[1590s] Progress: 100.0% | Hash Rate: 2.70 MH/s | I/O: 51.52 MB/s | Merge: 7.0%
-Merge progress: 7.0% (300647704/4294967296) at 853 K records/sec
-[1600s] Progress: 100.0% | Hash Rate: 2.68 MH/s | I/O: 51.20 MB/s | Merge: 7.2%
-[1610s] Progress: 100.0% | Hash Rate: 2.67 MH/s | I/O: 50.88 MB/s | Merge: 7.4%
-[1620s] Progress: 100.0% | Hash Rate: 2.65 MH/s | I/O: 50.57 MB/s | Merge: 7.6%
-[1630s] Progress: 100.0% | Hash Rate: 2.63 MH/s | I/O: 50.26 MB/s | Merge: 7.8%
-[1640s] Progress: 100.0% | Hash Rate: 2.62 MH/s | I/O: 49.95 MB/s | Merge: 8.0%
-Merge progress: 8.0% (343597376/4294967296) at 853 K records/sec
-[1650s] Progress: 100.0% | Hash Rate: 2.60 MH/s | I/O: 49.65 MB/s | Merge: 8.2%
-[1660s] Progress: 100.0% | Hash Rate: 2.59 MH/s | I/O: 49.35 MB/s | Merge: 8.4%
-[1670s] Progress: 100.0% | Hash Rate: 2.57 MH/s | I/O: 49.05 MB/s | Merge: 8.6%
-[1680s] Progress: 100.0% | Hash Rate: 2.56 MH/s | I/O: 48.76 MB/s | Merge: 8.8%
-[1690s] Progress: 100.0% | Hash Rate: 2.54 MH/s | I/O: 48.47 MB/s | Merge: 9.0%
-Merge progress: 9.0% (386547048/4294967296) at 852 K records/sec
-[1700s] Progress: 100.0% | Hash Rate: 2.53 MH/s | I/O: 48.19 MB/s | Merge: 9.2%
-[1710s] Progress: 100.0% | Hash Rate: 2.51 MH/s | I/O: 47.91 MB/s | Merge: 9.4%
-[1720s] Progress: 100.0% | Hash Rate: 2.50 MH/s | I/O: 47.63 MB/s | Merge: 9.5%
-[1730s] Progress: 100.0% | Hash Rate: 2.48 MH/s | I/O: 47.35 MB/s | Merge: 9.7%
-[1740s] Progress: 100.0% | Hash Rate: 2.47 MH/s | I/O: 47.08 MB/s | Merge: 9.9%
-Merge progress: 10.0% (429496720/4294967296) at 852 K records/sec
-[1750s] Progress: 100.0% | Hash Rate: 2.45 MH/s | I/O: 46.81 MB/s | Merge: 10.1%
-[1760s] Progress: 100.0% | Hash Rate: 2.44 MH/s | I/O: 46.54 MB/s | Merge: 10.3%
-[1770s] Progress: 100.0% | Hash Rate: 2.43 MH/s | I/O: 46.28 MB/s | Merge: 10.5%
-[1780s] Progress: 100.0% | Hash Rate: 2.41 MH/s | I/O: 46.02 MB/s | Merge: 10.7%
-[1790s] Progress: 100.0% | Hash Rate: 2.40 MH/s | I/O: 45.76 MB/s | Merge: 10.9%
-Merge progress: 11.0% (472446392/4294967296) at 852 K records/sec
-[1800s] Progress: 100.0% | Hash Rate: 2.39 MH/s | I/O: 45.51 MB/s | Merge: 11.1%
-[1810s] Progress: 100.0% | Hash Rate: 2.37 MH/s | I/O: 45.26 MB/s | Merge: 11.3%
-[1820s] Progress: 100.0% | Hash Rate: 2.36 MH/s | I/O: 45.01 MB/s | Merge: 11.5%
-[1830s] Progress: 100.0% | Hash Rate: 2.35 MH/s | I/O: 44.76 MB/s | Merge: 11.7%
-[1840s] Progress: 100.0% | Hash Rate: 2.33 MH/s | I/O: 44.52 MB/s | Merge: 11.9%
-Merge progress: 12.0% (515396064/4294967296) at 852 K records/sec
-[1850s] Progress: 100.0% | Hash Rate: 2.32 MH/s | I/O: 44.28 MB/s | Merge: 12.1%
-[1860s] Progress: 100.0% | Hash Rate: 2.31 MH/s | I/O: 44.04 MB/s | Merge: 12.3%
-[1870s] Progress: 100.0% | Hash Rate: 2.30 MH/s | I/O: 43.81 MB/s | Merge: 12.5%
-[1880s] Progress: 100.0% | Hash Rate: 2.28 MH/s | I/O: 43.57 MB/s | Merge: 12.7%
-[1890s] Progress: 100.0% | Hash Rate: 2.27 MH/s | I/O: 43.34 MB/s | Merge: 12.9%
-Merge progress: 13.0% (558345736/4294967296) at 852 K records/sec
-[1900s] Progress: 100.0% | Hash Rate: 2.26 MH/s | I/O: 43.11 MB/s | Merge: 13.1%
-[1910s] Progress: 100.0% | Hash Rate: 2.25 MH/s | I/O: 42.89 MB/s | Merge: 13.3%
-[1920s] Progress: 100.0% | Hash Rate: 2.24 MH/s | I/O: 42.67 MB/s | Merge: 13.5%
-[1930s] Progress: 100.0% | Hash Rate: 2.23 MH/s | I/O: 42.44 MB/s | Merge: 13.7%
-[1940s] Progress: 100.0% | Hash Rate: 2.21 MH/s | I/O: 42.23 MB/s | Merge: 13.9%
-Merge progress: 14.0% (601295408/4294967296) at 852 K records/sec
-[1950s] Progress: 100.0% | Hash Rate: 2.20 MH/s | I/O: 42.01 MB/s | Merge: 14.1%
-[1960s] Progress: 100.0% | Hash Rate: 2.19 MH/s | I/O: 41.79 MB/s | Merge: 14.3%
-[1970s] Progress: 100.0% | Hash Rate: 2.18 MH/s | I/O: 41.58 MB/s | Merge: 14.5%
-[1980s] Progress: 100.0% | Hash Rate: 2.17 MH/s | I/O: 41.37 MB/s | Merge: 14.7%
-[1990s] Progress: 100.0% | Hash Rate: 2.16 MH/s | I/O: 41.16 MB/s | Merge: 14.9%
-Merge progress: 15.0% (644245080/4294967296) at 851 K records/sec
-[2000s] Progress: 100.0% | Hash Rate: 2.15 MH/s | I/O: 40.96 MB/s | Merge: 15.1%
-[2010s] Progress: 100.0% | Hash Rate: 2.14 MH/s | I/O: 40.76 MB/s | Merge: 15.3%
-[2020s] Progress: 100.0% | Hash Rate: 2.13 MH/s | I/O: 40.55 MB/s | Merge: 15.5%
-[2030s] Progress: 100.0% | Hash Rate: 2.12 MH/s | I/O: 40.35 MB/s | Merge: 15.7%
-[2040s] Progress: 100.0% | Hash Rate: 2.11 MH/s | I/O: 40.16 MB/s | Merge: 15.9%
-Merge progress: 16.0% (687194752/4294967296) at 851 K records/sec
-[2050s] Progress: 100.0% | Hash Rate: 2.10 MH/s | I/O: 39.96 MB/s | Merge: 16.1%
-[2060s] Progress: 100.0% | Hash Rate: 2.08 MH/s | I/O: 39.77 MB/s | Merge: 16.3%
-[2070s] Progress: 100.0% | Hash Rate: 2.07 MH/s | I/O: 39.57 MB/s | Merge: 16.5%
-[2080s] Progress: 100.0% | Hash Rate: 2.06 MH/s | I/O: 39.38 MB/s | Merge: 16.7%
-[2090s] Progress: 100.0% | Hash Rate: 2.05 MH/s | I/O: 39.20 MB/s | Merge: 16.9%
-Merge progress: 17.0% (730144424/4294967296) at 851 K records/sec
-[2100s] Progress: 100.0% | Hash Rate: 2.05 MH/s | I/O: 39.01 MB/s | Merge: 17.1%
-[2110s] Progress: 100.0% | Hash Rate: 2.04 MH/s | I/O: 38.82 MB/s | Merge: 17.3%
-[2120s] Progress: 100.0% | Hash Rate: 2.03 MH/s | I/O: 38.64 MB/s | Merge: 17.5%
-[2130s] Progress: 100.0% | Hash Rate: 2.02 MH/s | I/O: 38.46 MB/s | Merge: 17.7%
-[2140s] Progress: 100.0% | Hash Rate: 2.01 MH/s | I/O: 38.28 MB/s | Merge: 17.9%
-Merge progress: 18.0% (773094096/4294967296) at 851 K records/sec
-[2150s] Progress: 100.0% | Hash Rate: 2.00 MH/s | I/O: 38.10 MB/s | Merge: 18.1%
-[2160s] Progress: 100.0% | Hash Rate: 1.99 MH/s | I/O: 37.92 MB/s | Merge: 18.3%
-[2170s] Progress: 100.0% | Hash Rate: 1.98 MH/s | I/O: 37.75 MB/s | Merge: 18.4%
-[2180s] Progress: 100.0% | Hash Rate: 1.97 MH/s | I/O: 37.58 MB/s | Merge: 18.6%
-[2190s] Progress: 100.0% | Hash Rate: 1.96 MH/s | I/O: 37.41 MB/s | Merge: 18.8%
-Merge progress: 19.0% (816043768/4294967296) at 851 K records/sec
-[2200s] Progress: 100.0% | Hash Rate: 1.95 MH/s | I/O: 37.24 MB/s | Merge: 19.0%
-[2210s] Progress: 100.0% | Hash Rate: 1.94 MH/s | I/O: 37.07 MB/s | Merge: 19.2%
-[2220s] Progress: 100.0% | Hash Rate: 1.93 MH/s | I/O: 36.90 MB/s | Merge: 19.4%
-[2230s] Progress: 100.0% | Hash Rate: 1.93 MH/s | I/O: 36.73 MB/s | Merge: 19.6%
-[2240s] Progress: 100.0% | Hash Rate: 1.92 MH/s | I/O: 36.57 MB/s | Merge: 19.8%
-Merge progress: 20.0% (858993440/4294967296) at 851 K records/sec
-[2250s] Progress: 100.0% | Hash Rate: 1.91 MH/s | I/O: 36.41 MB/s | Merge: 20.0%
-[2260s] Progress: 100.0% | Hash Rate: 1.90 MH/s | I/O: 36.25 MB/s | Merge: 20.2%
-[2270s] Progress: 100.0% | Hash Rate: 1.89 MH/s | I/O: 36.09 MB/s | Merge: 20.4%
-[2280s] Progress: 100.0% | Hash Rate: 1.88 MH/s | I/O: 35.93 MB/s | Merge: 20.6%
-[2290s] Progress: 100.0% | Hash Rate: 1.88 MH/s | I/O: 35.77 MB/s | Merge: 20.8%
-Merge progress: 21.0% (901943112/4294967296) at 851 K records/sec
-[2300s] Progress: 100.0% | Hash Rate: 1.87 MH/s | I/O: 35.62 MB/s | Merge: 21.0%
-[2310s] Progress: 100.0% | Hash Rate: 1.86 MH/s | I/O: 35.46 MB/s | Merge: 21.2%
-[2320s] Progress: 100.0% | Hash Rate: 1.85 MH/s | I/O: 35.31 MB/s | Merge: 21.4%
-[2330s] Progress: 100.0% | Hash Rate: 1.84 MH/s | I/O: 35.16 MB/s | Merge: 21.6%
-[2340s] Progress: 100.0% | Hash Rate: 1.84 MH/s | I/O: 35.01 MB/s | Merge: 21.8%
-Merge progress: 22.0% (944892784/4294967296) at 851 K records/sec
-[2350s] Progress: 100.0% | Hash Rate: 1.83 MH/s | I/O: 34.86 MB/s | Merge: 22.0%
-[2360s] Progress: 100.0% | Hash Rate: 1.82 MH/s | I/O: 34.71 MB/s | Merge: 22.2%
-[2370s] Progress: 100.0% | Hash Rate: 1.81 MH/s | I/O: 34.56 MB/s | Merge: 22.4%
-[2380s] Progress: 100.0% | Hash Rate: 1.80 MH/s | I/O: 34.42 MB/s | Merge: 22.6%
-[2390s] Progress: 100.0% | Hash Rate: 1.80 MH/s | I/O: 34.28 MB/s | Merge: 22.8%
-[2400s] Progress: 100.0% | Hash Rate: 1.79 MH/s | I/O: 34.13 MB/s | Merge: 23.0%
-Merge progress: 23.0% (987842456/4294967296) at 851 K records/sec
-[2410s] Progress: 100.0% | Hash Rate: 1.78 MH/s | I/O: 33.99 MB/s | Merge: 23.2%
-[2420s] Progress: 100.0% | Hash Rate: 1.77 MH/s | I/O: 33.85 MB/s | Merge: 23.4%
-[2430s] Progress: 100.0% | Hash Rate: 1.77 MH/s | I/O: 33.71 MB/s | Merge: 23.6%
-[2440s] Progress: 100.0% | Hash Rate: 1.76 MH/s | I/O: 33.57 MB/s | Merge: 23.8%
-[2450s] Progress: 100.0% | Hash Rate: 1.75 MH/s | I/O: 33.44 MB/s | Merge: 24.0%
-Merge progress: 24.0% (1030792128/4294967296) at 851 K records/sec
-[2460s] Progress: 100.0% | Hash Rate: 1.75 MH/s | I/O: 33.30 MB/s | Merge: 24.2%
-[2470s] Progress: 100.0% | Hash Rate: 1.74 MH/s | I/O: 33.17 MB/s | Merge: 24.4%
-[2480s] Progress: 100.0% | Hash Rate: 1.73 MH/s | I/O: 33.03 MB/s | Merge: 24.6%
-[2490s] Progress: 100.0% | Hash Rate: 1.72 MH/s | I/O: 32.90 MB/s | Merge: 24.8%
-[2500s] Progress: 100.0% | Hash Rate: 1.72 MH/s | I/O: 32.77 MB/s | Merge: 25.0%
-Merge progress: 25.0% (1073741800/4294967296) at 850 K records/sec
-[2510s] Progress: 100.0% | Hash Rate: 1.71 MH/s | I/O: 32.64 MB/s | Merge: 25.2%
-[2520s] Progress: 100.0% | Hash Rate: 1.70 MH/s | I/O: 32.51 MB/s | Merge: 25.4%
-[2530s] Progress: 100.0% | Hash Rate: 1.70 MH/s | I/O: 32.38 MB/s | Merge: 25.6%
-[2540s] Progress: 100.0% | Hash Rate: 1.69 MH/s | I/O: 32.25 MB/s | Merge: 25.8%
-[2550s] Progress: 100.0% | Hash Rate: 1.68 MH/s | I/O: 32.12 MB/s | Merge: 26.0%
-Merge progress: 26.0% (1116691472/4294967296) at 850 K records/sec
-[2560s] Progress: 100.0% | Hash Rate: 1.68 MH/s | I/O: 32.00 MB/s | Merge: 26.2%
-[2570s] Progress: 100.0% | Hash Rate: 1.67 MH/s | I/O: 31.87 MB/s | Merge: 26.4%
-[2580s] Progress: 100.0% | Hash Rate: 1.66 MH/s | I/O: 31.75 MB/s | Merge: 26.6%
-[2590s] Progress: 100.0% | Hash Rate: 1.66 MH/s | I/O: 31.63 MB/s | Merge: 26.7%
-[2600s] Progress: 100.0% | Hash Rate: 1.65 MH/s | I/O: 31.51 MB/s | Merge: 26.9%
-Merge progress: 27.0% (1159641144/4294967296) at 850 K records/sec
-[2610s] Progress: 100.0% | Hash Rate: 1.65 MH/s | I/O: 31.39 MB/s | Merge: 27.1%
-[2620s] Progress: 100.0% | Hash Rate: 1.64 MH/s | I/O: 31.27 MB/s | Merge: 27.3%
-[2630s] Progress: 100.0% | Hash Rate: 1.63 MH/s | I/O: 31.15 MB/s | Merge: 27.5%
-[2640s] Progress: 100.0% | Hash Rate: 1.63 MH/s | I/O: 31.03 MB/s | Merge: 27.7%
-[2650s] Progress: 100.0% | Hash Rate: 1.62 MH/s | I/O: 30.91 MB/s | Merge: 27.9%
-Merge progress: 28.0% (1202590816/4294967296) at 850 K records/sec
-[2660s] Progress: 100.0% | Hash Rate: 1.61 MH/s | I/O: 30.80 MB/s | Merge: 28.1%
-[2670s] Progress: 100.0% | Hash Rate: 1.61 MH/s | I/O: 30.68 MB/s | Merge: 28.3%
-[2680s] Progress: 100.0% | Hash Rate: 1.60 MH/s | I/O: 30.57 MB/s | Merge: 28.5%
-[2690s] Progress: 100.0% | Hash Rate: 1.60 MH/s | I/O: 30.45 MB/s | Merge: 28.7%
-[2700s] Progress: 100.0% | Hash Rate: 1.59 MH/s | I/O: 30.34 MB/s | Merge: 28.9%
-Merge progress: 29.0% (1245540488/4294967296) at 850 K records/sec
-[2710s] Progress: 100.0% | Hash Rate: 1.58 MH/s | I/O: 30.23 MB/s | Merge: 29.1%
-[2720s] Progress: 100.0% | Hash Rate: 1.58 MH/s | I/O: 30.12 MB/s | Merge: 29.3%
-[2730s] Progress: 100.0% | Hash Rate: 1.57 MH/s | I/O: 30.01 MB/s | Merge: 29.5%
-[2740s] Progress: 100.0% | Hash Rate: 1.57 MH/s | I/O: 29.90 MB/s | Merge: 29.7%
-[2750s] Progress: 100.0% | Hash Rate: 1.56 MH/s | I/O: 29.79 MB/s | Merge: 29.9%
-Merge progress: 30.0% (1288490160/4294967296) at 850 K records/sec
-[2760s] Progress: 100.0% | Hash Rate: 1.56 MH/s | I/O: 29.68 MB/s | Merge: 30.1%
-[2770s] Progress: 100.0% | Hash Rate: 1.55 MH/s | I/O: 29.57 MB/s | Merge: 30.3%
-[2780s] Progress: 100.0% | Hash Rate: 1.54 MH/s | I/O: 29.47 MB/s | Merge: 30.5%
-[2790s] Progress: 100.0% | Hash Rate: 1.54 MH/s | I/O: 29.36 MB/s | Merge: 30.7%
-[2800s] Progress: 100.0% | Hash Rate: 1.53 MH/s | I/O: 29.26 MB/s | Merge: 30.9%
-Merge progress: 31.0% (1331439832/4294967296) at 850 K records/sec
-[2810s] Progress: 100.0% | Hash Rate: 1.53 MH/s | I/O: 29.15 MB/s | Merge: 31.1%
-[2820s] Progress: 100.0% | Hash Rate: 1.52 MH/s | I/O: 29.05 MB/s | Merge: 31.3%
-[2830s] Progress: 100.0% | Hash Rate: 1.52 MH/s | I/O: 28.95 MB/s | Merge: 31.5%
-[2840s] Progress: 100.0% | Hash Rate: 1.51 MH/s | I/O: 28.84 MB/s | Merge: 31.7%
-[2850s] Progress: 100.0% | Hash Rate: 1.51 MH/s | I/O: 28.74 MB/s | Merge: 31.9%
-Merge progress: 32.0% (1374389504/4294967296) at 850 K records/sec
-[2860s] Progress: 100.0% | Hash Rate: 1.50 MH/s | I/O: 28.64 MB/s | Merge: 32.1%
-[2870s] Progress: 100.0% | Hash Rate: 1.50 MH/s | I/O: 28.54 MB/s | Merge: 32.3%
-[2880s] Progress: 100.0% | Hash Rate: 1.49 MH/s | I/O: 28.44 MB/s | Merge: 32.5%
-[2890s] Progress: 100.0% | Hash Rate: 1.49 MH/s | I/O: 28.35 MB/s | Merge: 32.7%
-[2900s] Progress: 100.0% | Hash Rate: 1.48 MH/s | I/O: 28.25 MB/s | Merge: 32.9%
-Merge progress: 33.0% (1417339176/4294967296) at 850 K records/sec
-[2910s] Progress: 100.0% | Hash Rate: 1.48 MH/s | I/O: 28.15 MB/s | Merge: 33.1%
-[2920s] Progress: 100.0% | Hash Rate: 1.47 MH/s | I/O: 28.05 MB/s | Merge: 33.3%
-[2930s] Progress: 100.0% | Hash Rate: 1.47 MH/s | I/O: 27.96 MB/s | Merge: 33.5%
-[2940s] Progress: 100.0% | Hash Rate: 1.46 MH/s | I/O: 27.86 MB/s | Merge: 33.7%
-[2950s] Progress: 100.0% | Hash Rate: 1.46 MH/s | I/O: 27.77 MB/s | Merge: 33.9%
-Merge progress: 34.0% (1460288848/4294967296) at 850 K records/sec
-[2960s] Progress: 100.0% | Hash Rate: 1.45 MH/s | I/O: 27.67 MB/s | Merge: 34.1%
-[2970s] Progress: 100.0% | Hash Rate: 1.45 MH/s | I/O: 27.58 MB/s | Merge: 34.3%
-[2980s] Progress: 100.0% | Hash Rate: 1.44 MH/s | I/O: 27.49 MB/s | Merge: 34.5%
-[2990s] Progress: 100.0% | Hash Rate: 1.44 MH/s | I/O: 27.40 MB/s | Merge: 34.7%
-[3000s] Progress: 100.0% | Hash Rate: 1.43 MH/s | I/O: 27.31 MB/s | Merge: 34.9%
-Merge progress: 35.0% (1503238520/4294967296) at 850 K records/sec
-[3010s] Progress: 100.0% | Hash Rate: 1.43 MH/s | I/O: 27.22 MB/s | Merge: 35.1%
-[3020s] Progress: 100.0% | Hash Rate: 1.42 MH/s | I/O: 27.13 MB/s | Merge: 35.3%
-[3030s] Progress: 100.0% | Hash Rate: 1.42 MH/s | I/O: 27.04 MB/s | Merge: 35.5%
-[3040s] Progress: 100.0% | Hash Rate: 1.41 MH/s | I/O: 26.95 MB/s | Merge: 35.7%
-[3050s] Progress: 100.0% | Hash Rate: 1.41 MH/s | I/O: 26.86 MB/s | Merge: 35.9%
-Merge progress: 36.0% (1546188192/4294967296) at 850 K records/sec
-[3060s] Progress: 100.0% | Hash Rate: 1.40 MH/s | I/O: 26.77 MB/s | Merge: 36.0%
-[3070s] Progress: 100.0% | Hash Rate: 1.40 MH/s | I/O: 26.68 MB/s | Merge: 36.2%
-[3080s] Progress: 100.0% | Hash Rate: 1.39 MH/s | I/O: 26.60 MB/s | Merge: 36.4%
-[3090s] Progress: 100.0% | Hash Rate: 1.39 MH/s | I/O: 26.51 MB/s | Merge: 36.6%
-[3100s] Progress: 100.0% | Hash Rate: 1.39 MH/s | I/O: 26.43 MB/s | Merge: 36.8%
-Merge progress: 37.0% (1589137864/4294967296) at 850 K records/sec
-[3110s] Progress: 100.0% | Hash Rate: 1.38 MH/s | I/O: 26.34 MB/s | Merge: 37.0%
-[3120s] Progress: 100.0% | Hash Rate: 1.38 MH/s | I/O: 26.26 MB/s | Merge: 37.2%
-[3130s] Progress: 100.0% | Hash Rate: 1.37 MH/s | I/O: 26.17 MB/s | Merge: 37.4%
-[3140s] Progress: 100.0% | Hash Rate: 1.37 MH/s | I/O: 26.09 MB/s | Merge: 37.6%
-[3150s] Progress: 100.0% | Hash Rate: 1.36 MH/s | I/O: 26.01 MB/s | Merge: 37.8%
-Merge progress: 38.0% (1632087536/4294967296) at 850 K records/sec
-[3160s] Progress: 100.0% | Hash Rate: 1.36 MH/s | I/O: 25.92 MB/s | Merge: 38.0%
-[3170s] Progress: 100.0% | Hash Rate: 1.35 MH/s | I/O: 25.84 MB/s | Merge: 38.2%
-[3180s] Progress: 100.0% | Hash Rate: 1.35 MH/s | I/O: 25.76 MB/s | Merge: 38.4%
-[3190s] Progress: 100.0% | Hash Rate: 1.35 MH/s | I/O: 25.68 MB/s | Merge: 38.6%
-[3200s] Progress: 100.0% | Hash Rate: 1.34 MH/s | I/O: 25.60 MB/s | Merge: 38.8%
-Merge progress: 39.0% (1675037208/4294967296) at 850 K records/sec
-[3210s] Progress: 100.0% | Hash Rate: 1.34 MH/s | I/O: 25.52 MB/s | Merge: 39.0%
-[3220s] Progress: 100.0% | Hash Rate: 1.33 MH/s | I/O: 25.44 MB/s | Merge: 39.2%
-[3230s] Progress: 100.0% | Hash Rate: 1.33 MH/s | I/O: 25.36 MB/s | Merge: 39.4%
-[3240s] Progress: 100.0% | Hash Rate: 1.33 MH/s | I/O: 25.28 MB/s | Merge: 39.6%
-[3250s] Progress: 100.0% | Hash Rate: 1.32 MH/s | I/O: 25.21 MB/s | Merge: 39.8%
-Merge progress: 40.0% (1717986880/4294967296) at 850 K records/sec
-[3260s] Progress: 100.0% | Hash Rate: 1.32 MH/s | I/O: 25.13 MB/s | Merge: 40.0%
-[3270s] Progress: 100.0% | Hash Rate: 1.31 MH/s | I/O: 25.05 MB/s | Merge: 40.2%
-[3280s] Progress: 100.0% | Hash Rate: 1.31 MH/s | I/O: 24.97 MB/s | Merge: 40.4%
-[3290s] Progress: 100.0% | Hash Rate: 1.31 MH/s | I/O: 24.90 MB/s | Merge: 40.6%
-[3300s] Progress: 100.0% | Hash Rate: 1.30 MH/s | I/O: 24.82 MB/s | Merge: 40.8%
-[3310s] Progress: 100.0% | Hash Rate: 1.30 MH/s | I/O: 24.75 MB/s | Merge: 41.0%
-Merge progress: 41.0% (1760936552/4294967296) at 850 K records/sec
-[3320s] Progress: 100.0% | Hash Rate: 1.29 MH/s | I/O: 24.67 MB/s | Merge: 41.2%
-[3330s] Progress: 100.0% | Hash Rate: 1.29 MH/s | I/O: 24.60 MB/s | Merge: 41.4%
-[3340s] Progress: 100.0% | Hash Rate: 1.29 MH/s | I/O: 24.53 MB/s | Merge: 41.6%
-[3350s] Progress: 100.0% | Hash Rate: 1.28 MH/s | I/O: 24.45 MB/s | Merge: 41.8%
-[3360s] Progress: 100.0% | Hash Rate: 1.28 MH/s | I/O: 24.38 MB/s | Merge: 42.0%
-Merge progress: 42.0% (1803886224/4294967296) at 850 K records/sec
-[3370s] Progress: 100.0% | Hash Rate: 1.27 MH/s | I/O: 24.31 MB/s | Merge: 42.2%
-[3380s] Progress: 100.0% | Hash Rate: 1.27 MH/s | I/O: 24.24 MB/s | Merge: 42.4%
-[3390s] Progress: 100.0% | Hash Rate: 1.27 MH/s | I/O: 24.16 MB/s | Merge: 42.6%
-[3400s] Progress: 100.0% | Hash Rate: 1.26 MH/s | I/O: 24.09 MB/s | Merge: 42.8%
-[3410s] Progress: 100.0% | Hash Rate: 1.26 MH/s | I/O: 24.02 MB/s | Merge: 43.0%
-Merge progress: 43.0% (1846835896/4294967296) at 850 K records/sec
-[3420s] Progress: 100.0% | Hash Rate: 1.26 MH/s | I/O: 23.95 MB/s | Merge: 43.2%
-[3430s] Progress: 100.0% | Hash Rate: 1.25 MH/s | I/O: 23.88 MB/s | Merge: 43.4%
-[3440s] Progress: 100.0% | Hash Rate: 1.25 MH/s | I/O: 23.81 MB/s | Merge: 43.6%
-[3450s] Progress: 100.0% | Hash Rate: 1.24 MH/s | I/O: 23.74 MB/s | Merge: 43.8%
-[3460s] Progress: 100.0% | Hash Rate: 1.24 MH/s | I/O: 23.68 MB/s | Merge: 44.0%
-Merge progress: 44.0% (1889785568/4294967296) at 850 K records/sec
-[3470s] Progress: 100.0% | Hash Rate: 1.24 MH/s | I/O: 23.61 MB/s | Merge: 44.2%
-[3480s] Progress: 100.0% | Hash Rate: 1.23 MH/s | I/O: 23.54 MB/s | Merge: 44.4%
-[3490s] Progress: 100.0% | Hash Rate: 1.23 MH/s | I/O: 23.47 MB/s | Merge: 44.5%
-[3500s] Progress: 100.0% | Hash Rate: 1.23 MH/s | I/O: 23.41 MB/s | Merge: 44.7%
-[3510s] Progress: 100.0% | Hash Rate: 1.22 MH/s | I/O: 23.34 MB/s | Merge: 44.9%
-Merge progress: 45.0% (1932735240/4294967296) at 850 K records/sec
-[3520s] Progress: 100.0% | Hash Rate: 1.22 MH/s | I/O: 23.27 MB/s | Merge: 45.1%
-[3530s] Progress: 100.0% | Hash Rate: 1.22 MH/s | I/O: 23.21 MB/s | Merge: 45.3%
-[3540s] Progress: 100.0% | Hash Rate: 1.21 MH/s | I/O: 23.14 MB/s | Merge: 45.5%
-[3550s] Progress: 100.0% | Hash Rate: 1.21 MH/s | I/O: 23.08 MB/s | Merge: 45.7%
-[3560s] Progress: 100.0% | Hash Rate: 1.21 MH/s | I/O: 23.01 MB/s | Merge: 45.9%
-Merge progress: 46.0% (1975684912/4294967296) at 850 K records/sec
-[3570s] Progress: 100.0% | Hash Rate: 1.20 MH/s | I/O: 22.95 MB/s | Merge: 46.1%
-[3580s] Progress: 100.0% | Hash Rate: 1.20 MH/s | I/O: 22.88 MB/s | Merge: 46.3%
-[3590s] Progress: 100.0% | Hash Rate: 1.20 MH/s | I/O: 22.82 MB/s | Merge: 46.5%
-[3600s] Progress: 100.0% | Hash Rate: 1.19 MH/s | I/O: 22.75 MB/s | Merge: 46.7%
-[3610s] Progress: 100.0% | Hash Rate: 1.19 MH/s | I/O: 22.69 MB/s | Merge: 46.9%
-Merge progress: 47.0% (2018634584/4294967296) at 850 K records/sec
-[3620s] Progress: 100.0% | Hash Rate: 1.19 MH/s | I/O: 22.63 MB/s | Merge: 47.1%
-[3630s] Progress: 100.0% | Hash Rate: 1.18 MH/s | I/O: 22.57 MB/s | Merge: 47.3%
-[3640s] Progress: 100.0% | Hash Rate: 1.18 MH/s | I/O: 22.50 MB/s | Merge: 47.5%
-[3650s] Progress: 100.0% | Hash Rate: 1.18 MH/s | I/O: 22.44 MB/s | Merge: 47.7%
-[3660s] Progress: 100.0% | Hash Rate: 1.17 MH/s | I/O: 22.38 MB/s | Merge: 47.9%
-Merge progress: 48.0% (2061584256/4294967296) at 850 K records/sec
-[3670s] Progress: 100.0% | Hash Rate: 1.17 MH/s | I/O: 22.32 MB/s | Merge: 48.1%
-[3680s] Progress: 100.0% | Hash Rate: 1.17 MH/s | I/O: 22.26 MB/s | Merge: 48.3%
-[3690s] Progress: 100.0% | Hash Rate: 1.16 MH/s | I/O: 22.20 MB/s | Merge: 48.5%
-[3700s] Progress: 100.0% | Hash Rate: 1.16 MH/s | I/O: 22.14 MB/s | Merge: 48.7%
-[3710s] Progress: 100.0% | Hash Rate: 1.16 MH/s | I/O: 22.08 MB/s | Merge: 48.9%
-Merge progress: 49.0% (2104533928/4294967296) at 850 K records/sec
-[3720s] Progress: 100.0% | Hash Rate: 1.15 MH/s | I/O: 22.02 MB/s | Merge: 49.1%
-[3730s] Progress: 100.0% | Hash Rate: 1.15 MH/s | I/O: 21.96 MB/s | Merge: 49.3%
-[3740s] Progress: 100.0% | Hash Rate: 1.15 MH/s | I/O: 21.90 MB/s | Merge: 49.5%
-[3750s] Progress: 100.0% | Hash Rate: 1.15 MH/s | I/O: 21.84 MB/s | Merge: 49.7%
-[3760s] Progress: 100.0% | Hash Rate: 1.14 MH/s | I/O: 21.79 MB/s | Merge: 49.9%
-Merge progress: 50.0% (2147483600/4294967296) at 850 K records/sec
-[3770s] Progress: 100.0% | Hash Rate: 1.14 MH/s | I/O: 21.73 MB/s | Merge: 50.1%
-[3780s] Progress: 100.0% | Hash Rate: 1.14 MH/s | I/O: 21.67 MB/s | Merge: 50.3%
-[3790s] Progress: 100.0% | Hash Rate: 1.13 MH/s | I/O: 21.61 MB/s | Merge: 50.5%
-[3800s] Progress: 100.0% | Hash Rate: 1.13 MH/s | I/O: 21.56 MB/s | Merge: 50.7%
-[3810s] Progress: 100.0% | Hash Rate: 1.13 MH/s | I/O: 21.50 MB/s | Merge: 50.9%
-Merge progress: 51.0% (2190433272/4294967296) at 850 K records/sec
-[3820s] Progress: 100.0% | Hash Rate: 1.12 MH/s | I/O: 21.44 MB/s | Merge: 51.1%
-[3830s] Progress: 100.0% | Hash Rate: 1.12 MH/s | I/O: 21.39 MB/s | Merge: 51.3%
-[3840s] Progress: 100.0% | Hash Rate: 1.12 MH/s | I/O: 21.33 MB/s | Merge: 51.5%
-[3850s] Progress: 100.0% | Hash Rate: 1.12 MH/s | I/O: 21.28 MB/s | Merge: 51.7%
-[3860s] Progress: 100.0% | Hash Rate: 1.11 MH/s | I/O: 21.22 MB/s | Merge: 51.9%
-Merge progress: 52.0% (2233382944/4294967296) at 850 K records/sec
-[3870s] Progress: 100.0% | Hash Rate: 1.11 MH/s | I/O: 21.17 MB/s | Merge: 52.1%
-[3880s] Progress: 100.0% | Hash Rate: 1.11 MH/s | I/O: 21.11 MB/s | Merge: 52.3%
-[3890s] Progress: 100.0% | Hash Rate: 1.10 MH/s | I/O: 21.06 MB/s | Merge: 52.5%
-[3900s] Progress: 100.0% | Hash Rate: 1.10 MH/s | I/O: 21.00 MB/s | Merge: 52.7%
-[3910s] Progress: 100.0% | Hash Rate: 1.10 MH/s | I/O: 20.95 MB/s | Merge: 52.9%
-Merge progress: 53.0% (2276332616/4294967296) at 850 K records/sec
-[3920s] Progress: 100.0% | Hash Rate: 1.10 MH/s | I/O: 20.90 MB/s | Merge: 53.1%
-[3930s] Progress: 100.0% | Hash Rate: 1.09 MH/s | I/O: 20.84 MB/s | Merge: 53.3%
-[3940s] Progress: 100.0% | Hash Rate: 1.09 MH/s | I/O: 20.79 MB/s | Merge: 53.5%
-[3950s] Progress: 100.0% | Hash Rate: 1.09 MH/s | I/O: 20.74 MB/s | Merge: 53.7%
-[3960s] Progress: 100.0% | Hash Rate: 1.08 MH/s | I/O: 20.69 MB/s | Merge: 53.9%
-Merge progress: 54.0% (2319282288/4294967296) at 850 K records/sec
-[3970s] Progress: 100.0% | Hash Rate: 1.08 MH/s | I/O: 20.63 MB/s | Merge: 54.0%
-[3980s] Progress: 100.0% | Hash Rate: 1.08 MH/s | I/O: 20.58 MB/s | Merge: 54.2%
-[3990s] Progress: 100.0% | Hash Rate: 1.08 MH/s | I/O: 20.53 MB/s | Merge: 54.4%
-[4000s] Progress: 100.0% | Hash Rate: 1.07 MH/s | I/O: 20.48 MB/s | Merge: 54.6%
-[4010s] Progress: 100.0% | Hash Rate: 1.07 MH/s | I/O: 20.43 MB/s | Merge: 54.8%
-Merge progress: 55.0% (2362231960/4294967296) at 850 K records/sec
-[4020s] Progress: 100.0% | Hash Rate: 1.07 MH/s | I/O: 20.38 MB/s | Merge: 55.0%
-[4030s] Progress: 100.0% | Hash Rate: 1.07 MH/s | I/O: 20.33 MB/s | Merge: 55.2%
-[4040s] Progress: 100.0% | Hash Rate: 1.06 MH/s | I/O: 20.28 MB/s | Merge: 55.4%
-[4050s] Progress: 100.0% | Hash Rate: 1.06 MH/s | I/O: 20.23 MB/s | Merge: 55.6%
-[4060s] Progress: 100.0% | Hash Rate: 1.06 MH/s | I/O: 20.18 MB/s | Merge: 55.8%
-Merge progress: 56.0% (2405181632/4294967296) at 850 K records/sec
-[4070s] Progress: 100.0% | Hash Rate: 1.06 MH/s | I/O: 20.13 MB/s | Merge: 56.0%
-[4080s] Progress: 100.0% | Hash Rate: 1.05 MH/s | I/O: 20.08 MB/s | Merge: 56.2%
-[4090s] Progress: 100.0% | Hash Rate: 1.05 MH/s | I/O: 20.03 MB/s | Merge: 56.4%
-[4100s] Progress: 100.0% | Hash Rate: 1.05 MH/s | I/O: 19.98 MB/s | Merge: 56.6%
-[4110s] Progress: 100.0% | Hash Rate: 1.04 MH/s | I/O: 19.93 MB/s | Merge: 56.8%
-Merge progress: 57.0% (2448131304/4294967296) at 850 K records/sec
-[4120s] Progress: 100.0% | Hash Rate: 1.04 MH/s | I/O: 19.88 MB/s | Merge: 57.0%
-[4130s] Progress: 100.0% | Hash Rate: 1.04 MH/s | I/O: 19.83 MB/s | Merge: 57.2%
-[4140s] Progress: 100.0% | Hash Rate: 1.04 MH/s | I/O: 19.79 MB/s | Merge: 57.4%
-[4150s] Progress: 100.0% | Hash Rate: 1.03 MH/s | I/O: 19.74 MB/s | Merge: 57.6%
-[4160s] Progress: 100.0% | Hash Rate: 1.03 MH/s | I/O: 19.69 MB/s | Merge: 57.8%
-Merge progress: 58.0% (2491080976/4294967296) at 850 K records/sec
-[4170s] Progress: 100.0% | Hash Rate: 1.03 MH/s | I/O: 19.64 MB/s | Merge: 58.0%
-[4180s] Progress: 100.0% | Hash Rate: 1.03 MH/s | I/O: 19.60 MB/s | Merge: 58.2%
-[4190s] Progress: 100.0% | Hash Rate: 1.03 MH/s | I/O: 19.55 MB/s | Merge: 58.4%
-[4200s] Progress: 100.0% | Hash Rate: 1.02 MH/s | I/O: 19.50 MB/s | Merge: 58.6%
-[4210s] Progress: 100.0% | Hash Rate: 1.02 MH/s | I/O: 19.46 MB/s | Merge: 58.8%
-[4220s] Progress: 100.0% | Hash Rate: 1.02 MH/s | I/O: 19.41 MB/s | Merge: 59.0%
-Merge progress: 59.0% (2534030648/4294967296) at 850 K records/sec
-[4230s] Progress: 100.0% | Hash Rate: 1.02 MH/s | I/O: 19.37 MB/s | Merge: 59.2%
-[4240s] Progress: 100.0% | Hash Rate: 1.01 MH/s | I/O: 19.32 MB/s | Merge: 59.4%
-[4250s] Progress: 100.0% | Hash Rate: 1.01 MH/s | I/O: 19.27 MB/s | Merge: 59.6%
-[4260s] Progress: 100.0% | Hash Rate: 1.01 MH/s | I/O: 19.23 MB/s | Merge: 59.8%
-[4270s] Progress: 100.0% | Hash Rate: 1.01 MH/s | I/O: 19.18 MB/s | Merge: 60.0%
-Merge progress: 60.0% (2576980320/4294967296) at 850 K records/sec
-[4280s] Progress: 100.0% | Hash Rate: 1.00 MH/s | I/O: 19.14 MB/s | Merge: 60.2%
-[4290s] Progress: 100.0% | Hash Rate: 1.00 MH/s | I/O: 19.10 MB/s | Merge: 60.4%
-[4300s] Progress: 100.0% | Hash Rate: 1.00 MH/s | I/O: 19.05 MB/s | Merge: 60.6%
-[4310s] Progress: 100.0% | Hash Rate: 1.00 MH/s | I/O: 19.01 MB/s | Merge: 60.8%
-[4320s] Progress: 100.0% | Hash Rate: 0.99 MH/s | I/O: 18.96 MB/s | Merge: 61.0%
-Merge progress: 61.0% (2619929992/4294967296) at 850 K records/sec
-[4330s] Progress: 100.0% | Hash Rate: 0.99 MH/s | I/O: 18.92 MB/s | Merge: 61.2%
-[4340s] Progress: 100.0% | Hash Rate: 0.99 MH/s | I/O: 18.88 MB/s | Merge: 61.4%
-[4350s] Progress: 100.0% | Hash Rate: 0.99 MH/s | I/O: 18.83 MB/s | Merge: 61.6%
-[4360s] Progress: 100.0% | Hash Rate: 0.99 MH/s | I/O: 18.79 MB/s | Merge: 61.8%
-[4370s] Progress: 100.0% | Hash Rate: 0.98 MH/s | I/O: 18.75 MB/s | Merge: 62.0%
-Merge progress: 62.0% (2662879664/4294967296) at 850 K records/sec
-[4380s] Progress: 100.0% | Hash Rate: 0.98 MH/s | I/O: 18.70 MB/s | Merge: 62.2%
-[4390s] Progress: 100.0% | Hash Rate: 0.98 MH/s | I/O: 18.66 MB/s | Merge: 62.4%
-[4400s] Progress: 100.0% | Hash Rate: 0.98 MH/s | I/O: 18.62 MB/s | Merge: 62.6%
-[4410s] Progress: 100.0% | Hash Rate: 0.97 MH/s | I/O: 18.58 MB/s | Merge: 62.8%
-[4420s] Progress: 100.0% | Hash Rate: 0.97 MH/s | I/O: 18.53 MB/s | Merge: 63.0%
-Merge progress: 63.0% (2705829336/4294967296) at 850 K records/sec
-[4430s] Progress: 100.0% | Hash Rate: 0.97 MH/s | I/O: 18.49 MB/s | Merge: 63.2%
-[4440s] Progress: 100.0% | Hash Rate: 0.97 MH/s | I/O: 18.45 MB/s | Merge: 63.4%
-[4450s] Progress: 100.0% | Hash Rate: 0.97 MH/s | I/O: 18.41 MB/s | Merge: 63.6%
-[4460s] Progress: 100.0% | Hash Rate: 0.96 MH/s | I/O: 18.37 MB/s | Merge: 63.8%
-[4470s] Progress: 100.0% | Hash Rate: 0.96 MH/s | I/O: 18.33 MB/s | Merge: 64.0%
-Merge progress: 64.0% (2748779008/4294967296) at 850 K records/sec
-[4480s] Progress: 100.0% | Hash Rate: 0.96 MH/s | I/O: 18.29 MB/s | Merge: 64.1%
-[4490s] Progress: 100.0% | Hash Rate: 0.96 MH/s | I/O: 18.24 MB/s | Merge: 64.3%
-[4500s] Progress: 100.0% | Hash Rate: 0.95 MH/s | I/O: 18.20 MB/s | Merge: 64.5%
-[4510s] Progress: 100.0% | Hash Rate: 0.95 MH/s | I/O: 18.16 MB/s | Merge: 64.7%
-[4520s] Progress: 100.0% | Hash Rate: 0.95 MH/s | I/O: 18.12 MB/s | Merge: 64.9%
-Merge progress: 65.0% (2791728680/4294967296) at 850 K records/sec
-[4530s] Progress: 100.0% | Hash Rate: 0.95 MH/s | I/O: 18.08 MB/s | Merge: 65.1%
-[4540s] Progress: 100.0% | Hash Rate: 0.95 MH/s | I/O: 18.04 MB/s | Merge: 65.3%
-[4550s] Progress: 100.0% | Hash Rate: 0.94 MH/s | I/O: 18.00 MB/s | Merge: 65.5%
-[4560s] Progress: 100.0% | Hash Rate: 0.94 MH/s | I/O: 17.96 MB/s | Merge: 65.7%
-[4570s] Progress: 100.0% | Hash Rate: 0.94 MH/s | I/O: 17.93 MB/s | Merge: 65.9%
-Merge progress: 66.0% (2834678352/4294967296) at 850 K records/sec
-[4580s] Progress: 100.0% | Hash Rate: 0.94 MH/s | I/O: 17.89 MB/s | Merge: 66.1%
-[4590s] Progress: 100.0% | Hash Rate: 0.94 MH/s | I/O: 17.85 MB/s | Merge: 66.3%
-[4600s] Progress: 100.0% | Hash Rate: 0.93 MH/s | I/O: 17.81 MB/s | Merge: 66.5%
-[4610s] Progress: 100.0% | Hash Rate: 0.93 MH/s | I/O: 17.77 MB/s | Merge: 66.7%
-[4620s] Progress: 100.0% | Hash Rate: 0.93 MH/s | I/O: 17.73 MB/s | Merge: 66.9%
-Merge progress: 67.0% (2877628024/4294967296) at 850 K records/sec
-[4630s] Progress: 100.0% | Hash Rate: 0.93 MH/s | I/O: 17.69 MB/s | Merge: 67.1%
-[4640s] Progress: 100.0% | Hash Rate: 0.93 MH/s | I/O: 17.65 MB/s | Merge: 67.3%
-[4650s] Progress: 100.0% | Hash Rate: 0.92 MH/s | I/O: 17.62 MB/s | Merge: 67.5%
-[4660s] Progress: 100.0% | Hash Rate: 0.92 MH/s | I/O: 17.58 MB/s | Merge: 67.7%
-[4670s] Progress: 100.0% | Hash Rate: 0.92 MH/s | I/O: 17.54 MB/s | Merge: 67.9%
-Merge progress: 68.0% (2920577696/4294967296) at 850 K records/sec
-[4680s] Progress: 100.0% | Hash Rate: 0.92 MH/s | I/O: 17.50 MB/s | Merge: 68.1%
-[4690s] Progress: 100.0% | Hash Rate: 0.92 MH/s | I/O: 17.47 MB/s | Merge: 68.3%
-[4700s] Progress: 100.0% | Hash Rate: 0.91 MH/s | I/O: 17.43 MB/s | Merge: 68.5%
-[4710s] Progress: 100.0% | Hash Rate: 0.91 MH/s | I/O: 17.39 MB/s | Merge: 68.7%
-[4720s] Progress: 100.0% | Hash Rate: 0.91 MH/s | I/O: 17.36 MB/s | Merge: 68.9%
-Merge progress: 69.0% (2963527368/4294967296) at 850 K records/sec
-[4730s] Progress: 100.0% | Hash Rate: 0.91 MH/s | I/O: 17.32 MB/s | Merge: 69.1%
-[4740s] Progress: 100.0% | Hash Rate: 0.91 MH/s | I/O: 17.28 MB/s | Merge: 69.3%
-[4750s] Progress: 100.0% | Hash Rate: 0.90 MH/s | I/O: 17.25 MB/s | Merge: 69.5%
-[4760s] Progress: 100.0% | Hash Rate: 0.90 MH/s | I/O: 17.21 MB/s | Merge: 69.7%
-[4770s] Progress: 100.0% | Hash Rate: 0.90 MH/s | I/O: 17.17 MB/s | Merge: 69.9%
-Merge progress: 70.0% (3006477040/4294967296) at 850 K records/sec
-[4780s] Progress: 100.0% | Hash Rate: 0.90 MH/s | I/O: 17.14 MB/s | Merge: 70.1%
-[4790s] Progress: 100.0% | Hash Rate: 0.90 MH/s | I/O: 17.10 MB/s | Merge: 70.3%
-[4800s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 17.07 MB/s | Merge: 70.5%
-[4810s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 17.03 MB/s | Merge: 70.7%
-[4820s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 17.00 MB/s | Merge: 70.9%
-Merge progress: 71.0% (3049426712/4294967296) at 850 K records/sec
-[4830s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 16.96 MB/s | Merge: 71.1%
-[4840s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 16.93 MB/s | Merge: 71.3%
-[4850s] Progress: 100.0% | Hash Rate: 0.89 MH/s | I/O: 16.89 MB/s | Merge: 71.5%
-[4860s] Progress: 100.0% | Hash Rate: 0.88 MH/s | I/O: 16.86 MB/s | Merge: 71.7%
-[4870s] Progress: 100.0% | Hash Rate: 0.88 MH/s | I/O: 16.82 MB/s | Merge: 71.9%
-Merge progress: 72.0% (3092376384/4294967296) at 850 K records/sec
-[4880s] Progress: 100.0% | Hash Rate: 0.88 MH/s | I/O: 16.79 MB/s | Merge: 72.1%
-[4890s] Progress: 100.0% | Hash Rate: 0.88 MH/s | I/O: 16.75 MB/s | Merge: 72.3%
-[4900s] Progress: 100.0% | Hash Rate: 0.88 MH/s | I/O: 16.72 MB/s | Merge: 72.5%
-[4910s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.68 MB/s | Merge: 72.7%
-[4920s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.65 MB/s | Merge: 72.9%
-Merge progress: 73.0% (3135326056/4294967296) at 850 K records/sec
-[4930s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.62 MB/s | Merge: 73.1%
-[4940s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.58 MB/s | Merge: 73.3%
-[4950s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.55 MB/s | Merge: 73.5%
-[4960s] Progress: 100.0% | Hash Rate: 0.87 MH/s | I/O: 16.52 MB/s | Merge: 73.7%
-[4970s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.48 MB/s | Merge: 73.9%
-Merge progress: 74.0% (3178275728/4294967296) at 850 K records/sec
-[4980s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.45 MB/s | Merge: 74.1%
-[4990s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.42 MB/s | Merge: 74.3%
-[5000s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.38 MB/s | Merge: 74.5%
-[5010s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.35 MB/s | Merge: 74.6%
-[5020s] Progress: 100.0% | Hash Rate: 0.86 MH/s | I/O: 16.32 MB/s | Merge: 74.8%
-Merge progress: 75.0% (3221225400/4294967296) at 850 K records/sec
-[5030s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.29 MB/s | Merge: 75.0%
-[5040s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.25 MB/s | Merge: 75.2%
-[5050s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.22 MB/s | Merge: 75.4%
-[5060s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.19 MB/s | Merge: 75.6%
-[5070s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.16 MB/s | Merge: 75.8%
-Merge progress: 76.0% (3264175072/4294967296) at 850 K records/sec
-[5080s] Progress: 100.0% | Hash Rate: 0.85 MH/s | I/O: 16.13 MB/s | Merge: 76.0%
-[5090s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 16.09 MB/s | Merge: 76.2%
-[5100s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 16.06 MB/s | Merge: 76.4%
-[5110s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 16.03 MB/s | Merge: 76.6%
-[5120s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 16.00 MB/s | Merge: 76.8%
-Merge progress: 77.0% (3307124744/4294967296) at 850 K records/sec
-[5130s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 15.97 MB/s | Merge: 77.0%
-[5140s] Progress: 100.0% | Hash Rate: 0.84 MH/s | I/O: 15.94 MB/s | Merge: 77.2%
-[5150s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.91 MB/s | Merge: 77.4%
-[5160s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.88 MB/s | Merge: 77.6%
-[5170s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.84 MB/s | Merge: 77.8%
-Merge progress: 78.0% (3350074416/4294967296) at 850 K records/sec
-[5180s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.81 MB/s | Merge: 78.0%
-[5190s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.78 MB/s | Merge: 78.2%
-[5200s] Progress: 100.0% | Hash Rate: 0.83 MH/s | I/O: 15.75 MB/s | Merge: 78.4%
-[5210s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.72 MB/s | Merge: 78.6%
-[5220s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.69 MB/s | Merge: 78.8%
-[5230s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.66 MB/s | Merge: 79.0%
-Merge progress: 79.0% (3393024088/4294967296) at 850 K records/sec
-[5240s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.63 MB/s | Merge: 79.2%
-[5250s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.60 MB/s | Merge: 79.4%
-[5260s] Progress: 100.0% | Hash Rate: 0.82 MH/s | I/O: 15.57 MB/s | Merge: 79.6%
-[5270s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.54 MB/s | Merge: 79.8%
-[5280s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.51 MB/s | Merge: 80.0%
-Merge progress: 80.0% (3435973760/4294967296) at 850 K records/sec
-[5290s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.49 MB/s | Merge: 80.2%
-[5300s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.46 MB/s | Merge: 80.4%
-[5310s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.43 MB/s | Merge: 80.6%
-[5320s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.40 MB/s | Merge: 80.8%
-[5330s] Progress: 100.0% | Hash Rate: 0.81 MH/s | I/O: 15.37 MB/s | Merge: 81.0%
-Merge progress: 81.0% (3478923432/4294967296) at 850 K records/sec
-[5340s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.34 MB/s | Merge: 81.2%
-[5350s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.31 MB/s | Merge: 81.4%
-[5360s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.28 MB/s | Merge: 81.6%
-[5370s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.25 MB/s | Merge: 81.8%
-[5380s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.23 MB/s | Merge: 82.0%
-Merge progress: 82.0% (3521873104/4294967296) at 850 K records/sec
-[5390s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.20 MB/s | Merge: 82.2%
-[5400s] Progress: 100.0% | Hash Rate: 0.80 MH/s | I/O: 15.17 MB/s | Merge: 82.4%
-[5410s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.14 MB/s | Merge: 82.6%
-[5420s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.11 MB/s | Merge: 82.7%
-[5430s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.09 MB/s | Merge: 82.9%
-Merge progress: 83.0% (3564822776/4294967296) at 850 K records/sec
-[5440s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.06 MB/s | Merge: 83.1%
-[5450s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.03 MB/s | Merge: 83.3%
-[5460s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 15.00 MB/s | Merge: 83.5%
-[5470s] Progress: 100.0% | Hash Rate: 0.79 MH/s | I/O: 14.98 MB/s | Merge: 83.7%
-[5480s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.95 MB/s | Merge: 83.9%
-Merge progress: 84.0% (3607772448/4294967296) at 850 K records/sec
-[5490s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.92 MB/s | Merge: 84.1%
-[5500s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.89 MB/s | Merge: 84.3%
-[5510s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.87 MB/s | Merge: 84.5%
-[5520s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.84 MB/s | Merge: 84.7%
-[5530s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.81 MB/s | Merge: 84.9%
-Merge progress: 85.0% (3650722120/4294967296) at 850 K records/sec
-[5540s] Progress: 100.0% | Hash Rate: 0.78 MH/s | I/O: 14.79 MB/s | Merge: 85.1%
-[5550s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.76 MB/s | Merge: 85.3%
-[5560s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.73 MB/s | Merge: 85.5%
-[5570s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.71 MB/s | Merge: 85.7%
-[5580s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.68 MB/s | Merge: 85.9%
-Merge progress: 86.0% (3693671792/4294967296) at 850 K records/sec
-[5590s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.65 MB/s | Merge: 86.1%
-[5600s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.63 MB/s | Merge: 86.3%
-[5610s] Progress: 100.0% | Hash Rate: 0.77 MH/s | I/O: 14.60 MB/s | Merge: 86.5%
-[5620s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.58 MB/s | Merge: 86.7%
-[5630s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.55 MB/s | Merge: 86.9%
-Merge progress: 87.0% (3736621464/4294967296) at 850 K records/sec
-[5640s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.52 MB/s | Merge: 87.1%
-[5650s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.50 MB/s | Merge: 87.3%
-[5660s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.47 MB/s | Merge: 87.5%
-[5670s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.45 MB/s | Merge: 87.7%
-[5680s] Progress: 100.0% | Hash Rate: 0.76 MH/s | I/O: 14.42 MB/s | Merge: 87.9%
-Merge progress: 88.0% (3779571136/4294967296) at 850 K records/sec
-[5690s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.40 MB/s | Merge: 88.1%
-[5700s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.37 MB/s | Merge: 88.3%
-[5710s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.35 MB/s | Merge: 88.5%
-[5720s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.32 MB/s | Merge: 88.7%
-[5730s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.30 MB/s | Merge: 88.9%
-Merge progress: 89.0% (3822520808/4294967296) at 850 K records/sec
-[5740s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.27 MB/s | Merge: 89.1%
-[5750s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.25 MB/s | Merge: 89.3%
-[5760s] Progress: 100.0% | Hash Rate: 0.75 MH/s | I/O: 14.22 MB/s | Merge: 89.5%
-[5770s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.20 MB/s | Merge: 89.7%
-[5780s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.17 MB/s | Merge: 89.9%
-Merge progress: 90.0% (3865470480/4294967296) at 850 K records/sec
-[5790s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.15 MB/s | Merge: 90.1%
-[5800s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.12 MB/s | Merge: 90.3%
-[5810s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.10 MB/s | Merge: 90.4%
-[5820s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.08 MB/s | Merge: 90.6%
-[5830s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.05 MB/s | Merge: 90.8%
-Merge progress: 91.0% (3908420152/4294967296) at 850 K records/sec
-[5840s] Progress: 100.0% | Hash Rate: 0.74 MH/s | I/O: 14.03 MB/s | Merge: 91.0%
-[5850s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 14.00 MB/s | Merge: 91.2%
-[5860s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.98 MB/s | Merge: 91.4%
-[5870s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.96 MB/s | Merge: 91.6%
-[5880s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.93 MB/s | Merge: 91.8%
-Merge progress: 92.0% (3951369824/4294967296) at 850 K records/sec
-[5890s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.91 MB/s | Merge: 92.0%
-[5900s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.88 MB/s | Merge: 92.2%
-[5910s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.86 MB/s | Merge: 92.4%
-[5920s] Progress: 100.0% | Hash Rate: 0.73 MH/s | I/O: 13.84 MB/s | Merge: 92.6%
-[5930s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.81 MB/s | Merge: 92.8%
-Merge progress: 93.0% (3994319496/4294967296) at 850 K records/sec
-[5940s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.79 MB/s | Merge: 93.0%
-[5950s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.77 MB/s | Merge: 93.2%
-[5960s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.74 MB/s | Merge: 93.4%
-[5970s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.72 MB/s | Merge: 93.6%
-[5980s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.70 MB/s | Merge: 93.8%
-Merge progress: 94.0% (4037269168/4294967296) at 850 K records/sec
-[5990s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.68 MB/s | Merge: 94.0%
-[6000s] Progress: 100.0% | Hash Rate: 0.72 MH/s | I/O: 13.65 MB/s | Merge: 94.2%
-[6010s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.63 MB/s | Merge: 94.4%
-[6020s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.61 MB/s | Merge: 94.6%
-[6030s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.59 MB/s | Merge: 94.8%
-[6040s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.56 MB/s | Merge: 95.0%
-Merge progress: 95.0% (4080218840/4294967296) at 850 K records/sec
-[6050s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.54 MB/s | Merge: 95.2%
-[6060s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.52 MB/s | Merge: 95.4%
-[6070s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.50 MB/s | Merge: 95.6%
-[6080s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.47 MB/s | Merge: 95.8%
-[6090s] Progress: 100.0% | Hash Rate: 0.71 MH/s | I/O: 13.45 MB/s | Merge: 96.0%
-Merge progress: 96.0% (4123168512/4294967296) at 850 K records/sec
-[6100s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.43 MB/s | Merge: 96.2%
-[6110s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.41 MB/s | Merge: 96.4%
-[6120s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.39 MB/s | Merge: 96.6%
-[6130s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.36 MB/s | Merge: 96.8%
-[6140s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.34 MB/s | Merge: 97.0%
-Merge progress: 97.0% (4166118184/4294967296) at 850 K records/sec
-[6150s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.32 MB/s | Merge: 97.2%
-[6160s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.30 MB/s | Merge: 97.4%
-[6170s] Progress: 100.0% | Hash Rate: 0.70 MH/s | I/O: 13.28 MB/s | Merge: 97.6%
-[6180s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.26 MB/s | Merge: 97.8%
-[6190s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.23 MB/s | Merge: 98.0%
-Merge progress: 98.0% (4209067856/4294967296) at 850 K records/sec
-[6200s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.21 MB/s | Merge: 98.2%
-[6210s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.19 MB/s | Merge: 98.4%
-[6220s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.17 MB/s | Merge: 98.6%
-[6230s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.15 MB/s | Merge: 98.8%
-[6240s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.13 MB/s | Merge: 99.0%
-Merge progress: 99.0% (4252017528/4294967296) at 850 K records/sec
-[6250s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.11 MB/s | Merge: 99.1%
-[6260s] Progress: 100.0% | Hash Rate: 0.69 MH/s | I/O: 13.09 MB/s | Merge: 99.3%
-[6270s] Progress: 100.0% | Hash Rate: 0.68 MH/s | I/O: 13.07 MB/s | Merge: 99.5%
-[6280s] Progress: 100.0% | Hash Rate: 0.68 MH/s | I/O: 13.04 MB/s | Merge: 99.7%
-[6290s] Progress: 100.0% | Hash Rate: 0.68 MH/s | I/O: 13.02 MB/s | Merge: 99.9%
-Merge progress: 100.0% (4294967200/4294967296) at 850 K records/sec
-Merge completed successfully: 4294967296 records written
-[6300s] Progress: 100.0% | Hash Rate: 0.68 MH/s | I/O: 13.00 MB/s | Merge: 100.0%
-Temp file cleaned up
+[1210s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5492 MH/s | I/O Rate: 52.4637 MB/s | I/O Blocks: 31
+[1212s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5433 MH/s | I/O Rate: 54.0667 MB/s | I/O Blocks: 32
+[1214s] Progress: 100.0% | Round: 32/32 | Hash Rate: 3.5375 MH/s | I/O Rate: 53.9776 MB/s | I/O Blocks: 32
+[I/O 0] Synced 64.0000 GB
+[I/O 0] Completed. Total written: 64.0000 GB
 Final statistics:
-vaultx t24 i1 m2048 k32 0.68 0.00 6310.17
-Verifying search files...
+=== Final Statistics ===
+Total time: 1216.1329 seconds
+Hash rate: 3.5317 MH/s
+I/O rate: 53.8888 MB/s
+File size: 64.000000 GB
+vaultx t24 i1 m2048 k32 3.5317 53.8888 1216.132863
 Running searches...
 === k=26, difficulty=3 ===
+searches=1000 difficulty=3
+Parsed k : 26
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 67108864
+File Size: 1073741824 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=979 total_matches=979 notfound=21 total_time=0.042683 s avg_ms=0.043 ms searches/sec=23428 total_seeks=23299 avg_seeks=23.299 total_comps=23299 avg_comps=23.299 avg_matches=1.000
 ---
 === k=26, difficulty=4 ===
+searches=1000 difficulty=4
+Parsed k : 26
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 67108864
+File Size: 1073741824 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=9 total_matches=9 notfound=991 total_time=0.031850 s avg_ms=0.032 ms searches/sec=31397 total_seeks=25994 avg_seeks=25.994 total_comps=25994 avg_comps=25.994 avg_matches=1.000
 ---
 === k=26, difficulty=5 ===
+searches=1000 difficulty=5
+Parsed k : 26
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 67108864
+File Size: 1073741824 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=0 total_matches=0 notfound=1000 total_time=0.042943 s avg_ms=0.043 ms searches/sec=23287 total_seeks=26000 avg_seeks=26.000 total_comps=26000 avg_comps=26.000 avg_matches=0.000
 ---
 === k=32, difficulty=3 ===
-=== VaultX Configuration ===
-Threads: 48, I/O Threads: 1
+searches=1000 difficulty=3
+Parsed k : 32
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 4294967296
+File Size: 68719476736 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=1000 total_matches=1000 notfound=0 total_time=0.046243 s avg_ms=0.046 ms searches/sec=21625 total_seeks=28102 avg_seeks=28.102 total_comps=28102 avg_comps=28.102 avg_matches=1.000
 ---
 === k=32, difficulty=4 ===
-=== VaultX Configuration ===
-Threads: 48, I/O Threads: 1
+searches=1000 difficulty=4
+Parsed k : 32
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 4294967296
+File Size: 68719476736 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=35 total_matches=35 notfound=965 total_time=0.037152 s avg_ms=0.037 ms searches/sec=26917 total_seeks=31960 avg_seeks=31.960 total_comps=31960 avg_comps=31.960 avg_matches=1.000
 ---
 === k=32, difficulty=5 ===
-=== VaultX Configuration ===
-Threads: 48, I/O Threads: 1
+searches=1000 difficulty=5
+Parsed k : 32
+Nonce Size : 6
+Record Size : 16
+Hash Size : 10
+Number of Hashes : 4294967296
+File Size: 68719476736 bytes
+Search progress: 10.0%
+Search progress: 20.0%
+Search progress: 30.0%
+Search progress: 40.0%
+Search progress: 50.0%
+Search progress: 60.0%
+Search progress: 70.0%
+Search progress: 80.0%
+Search progress: 90.0%
+Search progress: 100.0%
+Search Summary: requested=1000 found_queries=0 total_matches=0 notfound=1000 total_time=0.050235 s avg_ms=0.050 ms searches/sec=19906 total_seeks=32000 avg_seeks=32.000 total_comps=32000 avg_comps=32.000 avg_matches=0.000
 ---
-Search experiments completed at: Sun Oct 26 07:48:10 UTC 2025
+Search experiments completed at: Sun Oct 26 19:55:23 UTC 2025
